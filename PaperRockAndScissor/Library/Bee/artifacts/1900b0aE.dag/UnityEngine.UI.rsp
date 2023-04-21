@@ -345,8 +345,6 @@
 -r:"E:/Unity_HUB/2021.3.17f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
 -r:"E:/Unity_HUB/2021.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 -r:"E:/Unity_HUB/2021.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll"
--analyzer:"Assets/DOTween/Plugins/Demigiant/DOTween/DOTween.dll"
--analyzer:"Assets/DOTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/AxisEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/BaseEventData.cs"
 "Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs"

@@ -349,8 +349,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/DOTween/Plugins/Demigiant/DOTween/DOTween.dll"
--analyzer:"Assets/DOTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Assets/StringAssets.cs"
 "Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Assets/UiConstants.cs"
 "Library/PackageCache/com.unity.collab-proxy@1.17.7/Editor/Collaborate/Common/ArrayContainer.cs"

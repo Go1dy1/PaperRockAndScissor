@@ -343,8 +343,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
--analyzer:"Assets/DOTween/Plugins/Demigiant/DOTween/DOTween.dll"
--analyzer:"Assets/DOTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.services.core@1.7.0/Runtime/Core.Internal/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.services.core@1.7.0/Runtime/Core.Internal/AsyncOperation/AsyncOperation.cs"
 "Library/PackageCache/com.unity.services.core@1.7.0/Runtime/Core.Internal/AsyncOperation/AsyncOperationAwaiter.cs"

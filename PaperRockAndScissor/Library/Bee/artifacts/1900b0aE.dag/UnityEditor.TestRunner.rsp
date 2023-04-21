@@ -326,8 +326,6 @@
 -r:"E:/Unity_HUB/2021.3.17f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"E:/Unity_HUB/2021.3.17f1/Editor/Data/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
--analyzer:"Assets/DOTween/Plugins/Demigiant/DOTween/DOTween.dll"
--analyzer:"Assets/DOTween/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll"
 "Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/Api/Analytics/AnalyticsReporter.cs"
 "Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/Api/Analytics/AnalyticsTestCallback.cs"
 "Library/PackageCache/com.unity.test-framework@1.1.31/UnityEditor.TestRunner/Api/Analytics/RunFinishedData.cs"
