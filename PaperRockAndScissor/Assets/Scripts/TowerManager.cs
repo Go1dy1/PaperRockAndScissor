@@ -5,34 +5,25 @@ using UnityEngine;
 using DG.Tweening;
 public class TowerManager : MonoBehaviour
 {
-  bool Attaked =false;
-  public Animator anim;
-    private int EnemyHeartTower = 15;
-    private int MyHeartTower = 15;
-
-    void OnBool(){
+  public bool Attaked =false;
+  
+void Start()
+{
+  
+}
+ public void OnBool(){
       Attaked =true;
     }
 
     void OFFBool(){
       Attaked =false;
     }
-    void Update()
-    {
-      anim.SetBool("Attaked",Attaked);
-    }
-   void OnTriggerEnter(Collider other)
-   {
-    
-     if(other.tag == "Enemy"){
-         
+public int DOTower(int HeartTowerCount){
       OnBool();
-
+      HeartTowerCount =-1;
+      Debug.Log("count:");
       Invoke("OFFBool",0.3f);
-        
-       
-    }
-   }
-  
-    
+      return HeartTowerCount;
+  }
+
 }
