@@ -1,15 +1,37 @@
+using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.AI;
 public class Card : MonoBehaviour
 {
+  public enum StateUnit{
+        Ide,
+        WalkToCastle,
+        WalkToEnemy
+        
+    }
+    [SerializeField] StateUnit _currentState;
+public bool direction= false;
+public Transform Tower;
+protected NavMeshAgent agent;
 
-
+    void Awake()
+{    _currentState = StateUnit.Ide;
+   /* if(Uniqtag=="Enemy"){
+    }
+    else if(Uniqtag=="Ally"){
+    }
+   */ 
+}
     private void Update()
     {
         if(Input.GetMouseButton(0)){
             transform.DOMove(GetMousePosition(),1);
+        }
+        if(_currentState==StateUnit.WalkToCastle){
+
         }
     }
 public  Vector3 GetMousePosition()
@@ -21,7 +43,16 @@ public  Vector3 GetMousePosition()
         
        return ray.GetPoint(enter);
   }
-public void Place(){
+public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
+        if(Input.GetMouseButton(0)&&!direction){
+            _currentState=StateUnit.WalkToCastle;
+           direction = true;
+            transform.DOMove(GetMousePosition(),1);
+            agent.SetDestination(Tower.position);
+        }
+         
+         return agent;
+    }
 
-}
+
 }
