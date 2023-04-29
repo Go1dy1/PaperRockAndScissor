@@ -4,17 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
 public class UnitCreator : MonoBehaviour
 {
     [SerializeField] Camera _camera;
     [SerializeField] private Button BStone,BScissors,BPaper;
 
-  public enum CardType{
-    Stone,
-    Scissors,
-    Paper
-  }
-  Vector3 T= new Vector3(0f,1f,0f);
+  
+
+  Vector3 T= new Vector3(0f,1f,-9.94f);
    public GameObject Stone;
    public GameObject Scissors;
    public GameObject Paper;
@@ -31,13 +29,13 @@ public void ChoiceCard(CardType card)
      switch (card)
     {
         case CardType.Stone:
-           Instantiate(Stone,T,Quaternion.identity);
+      GameObject stone= Instantiate(Stone,T,Quaternion.identity);
             break;
         case CardType.Scissors:
-           Instantiate(Scissors,T,Quaternion.identity);
+          GameObject scissors=  Instantiate(Scissors,T,Quaternion.identity);
             break;
         case CardType.Paper:
-           Instantiate(Paper,T,Quaternion.identity);
+          GameObject paper= Instantiate(Paper,T,Quaternion.identity);
             break;
         default:
             Debug.LogError("Кнопка не назначенна");
@@ -45,4 +43,10 @@ public void ChoiceCard(CardType card)
     }
 }
 }
+public enum CardType{
+    Stone,
+    Scissors,
+    Paper
+  }
+
 

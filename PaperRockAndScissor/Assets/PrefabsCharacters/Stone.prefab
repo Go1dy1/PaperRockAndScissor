@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1902857997001006984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7818292807067437431}
+  m_Layer: 0
+  m_Name: Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7818292807067437431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902857997001006984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8908564322345977586}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8554909051178486950
 GameObject:
   m_ObjectHideFlags: 0
@@ -60,6 +91,7 @@ GameObject:
   - component: {fileID: 6675153624326610593}
   - component: {fileID: 7561721578498694180}
   - component: {fileID: -4226953416783162085}
+  - component: {fileID: 8566907594403315694}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Ally
@@ -80,6 +112,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5282758346012771570}
+  - {fileID: 7818292807067437431}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -158,9 +191,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cb389d5164112242b6a89f36b8bfc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  typeOfCard: 0
+  _currentState: 0
+  Ally: {fileID: 8908564322345977589}
+  Pos: {fileID: 7818292807067437431}
+  CheckEnemy: {fileID: 0}
+  HealPoint: 0
+  Damage: 0
+  speed: 0
+  ModifyDamage: 0
   direction: 0
   Tower: {fileID: 0}
-  speed: 0
 --- !u!54 &7561721578498694180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -187,8 +228,8 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
+  m_Speed: 3
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -199,3 +240,15 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8566907594403315694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908564322345977591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e86dfee2d47064a86d4636b92143f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,13 +5,9 @@ using DG.Tweening;
 using UnityEngine.AI;
 public class Stone : Card
 {
-
-private int HealPoint= 8;
-private int Damage = 3;
-private int Price= 3;
-public float speed;
-private float ModifyDamage= 2;
-
+private void Awake() {
+    HealPoint= 12; Damage = 3;speed=2; ModifyDamage= 2;
+}
 private IEnumerator Start()
 {
     yield return new WaitForEndOfFrame();
@@ -23,11 +19,13 @@ void Update()
         
        TempMethod(agent,Tower);
 
-       /*if(direction==true&& )
-        {
-            agent.SetDestination(Tower.position);
-        }
-        */
+      
     }
 
+
+
+    
+        
+    
+ 
 }

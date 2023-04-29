@@ -5,13 +5,6 @@ using DG.Tweening;
 using UnityEngine.AI;
 public class Paper : Card
 {
-
-private int HealPoint= 8;
-private int Damage = 3;
-private int Price= 3;
-public float speed;
-private float ModifyDamage= 2;
-
 private IEnumerator  Start(){
     yield return new WaitForEndOfFrame();
     Tower= CastlePosition.enemy.enemyPos;  
@@ -19,6 +12,7 @@ private IEnumerator  Start(){
 
 }
 private void Awake() {
+     HealPoint= 8; Damage = 3;speed=2; ModifyDamage= 2;
     if(gameObject.tag=="Ally"){
         
     }
@@ -34,5 +28,14 @@ private void Awake() {
     */
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.tag== "Enemy"&& GameObject.Find("Scissors")){
+                Debug.Log("dasd");
+                Destroy(gameObject);
+            
+        }
+
+    }
     
 }
