@@ -10,10 +10,10 @@ NavMeshProjectSettings:
   - name: Not Walkable
     cost: 1
   - name: Jump
+    cost: 3
+  - name: Bridge
     cost: 2
-  - name: 
-    cost: 1
-  - name: 
+  - name: Gsdfs
     cost: 1
   - name: 
     cost: 1

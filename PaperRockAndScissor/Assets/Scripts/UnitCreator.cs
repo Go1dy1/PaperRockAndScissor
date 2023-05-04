@@ -7,11 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class UnitCreator : MonoBehaviour
 {
-    [SerializeField] Camera _camera;
-    [SerializeField] private Button BStone,BScissors,BPaper;
-
-  
-
+  [SerializeField] Camera _camera;
+  [SerializeField] private Button BStone,BScissors,BPaper;
   Vector3 T= new Vector3(0f,1f,-9.94f);
    public GameObject Stone;
    public GameObject Scissors;
@@ -30,12 +27,15 @@ public void ChoiceCard(CardType card)
     {
         case CardType.Stone:
       GameObject stone= Instantiate(Stone,T,Quaternion.identity);
+      CharacterManager.allyList.Add(stone.gameObject);
             break;
         case CardType.Scissors:
           GameObject scissors=  Instantiate(Scissors,T,Quaternion.identity);
+          CharacterManager.allyList.Add(scissors.gameObject);
             break;
         case CardType.Paper:
           GameObject paper= Instantiate(Paper,T,Quaternion.identity);
+          CharacterManager.allyList.Add(paper.gameObject);
             break;
         default:
             Debug.LogError("Кнопка не назначенна");

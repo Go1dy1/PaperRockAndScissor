@@ -19,6 +19,7 @@ void OnTriggerEnter(Collider other)
 if(other.tag == "Ally"){
   EnemyCastle.transform.DOMove(enemyfront,0f,false );
   EnemyCastle.transform.DOMove(enemyback,1f,false);
+  CharacterManager.allyList.Remove(other.gameObject);
   Destroy(other.gameObject);
   
   HealPoint= HealPoint-1;

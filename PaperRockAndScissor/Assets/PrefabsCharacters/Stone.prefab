@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 6675153624326610593}
   - component: {fileID: 7561721578498694180}
   - component: {fileID: -4226953416783162085}
-  - component: {fileID: 8566907594403315694}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Ally
@@ -195,13 +194,13 @@ MonoBehaviour:
   _currentState: 0
   Ally: {fileID: 8908564322345977589}
   Pos: {fileID: 7818292807067437431}
-  CheckEnemy: {fileID: 0}
   HealPoint: 0
   Damage: 0
   speed: 0
   ModifyDamage: 0
   direction: 0
   Tower: {fileID: 0}
+  agent: {fileID: -4226953416783162085}
 --- !u!54 &7561721578498694180
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -240,15 +239,3 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &8566907594403315694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8908564322345977591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e86dfee2d47064a86d4636b92143f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

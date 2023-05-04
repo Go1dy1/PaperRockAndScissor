@@ -7,6 +7,7 @@ public class Stone : Card
 {
 private void Awake() {
     HealPoint= 12; Damage = 3;speed=2; ModifyDamage= 2;
+    
 }
 private IEnumerator Start()
 {
