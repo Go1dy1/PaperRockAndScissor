@@ -17,7 +17,7 @@ private IEnumerator Start() {
 }
 void Awake()
 {
- T = new Vector3(UnityEngine.Random.Range(-6.4f, 5.75f), 0.44f, UnityEngine.Random.Range(-2.5f, 4.0f));
+ T = new Vector3(UnityEngine.Random.Range(-4.5f,3.1f), 0.44f, UnityEngine.Random.Range(-2.5f, 3.35f));
  CardType cardType = (CardType)UnityEngine.Random.Range(0, 2);
 }
 

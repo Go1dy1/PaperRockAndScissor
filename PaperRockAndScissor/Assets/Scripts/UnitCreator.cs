@@ -25,17 +25,26 @@ public void ChoiceCard(CardType card)
 {
      switch (card)
     {
-        case CardType.Stone:
-      GameObject stone= Instantiate(Stone,T,Quaternion.identity);
-      CharacterManager.allyList.Add(stone.gameObject);
+        case CardType.Stone :
+            if(Unit.CurrentManaScore>=3){
+              Unit.CurrentManaScore-=3;
+          GameObject stone= Instantiate(Stone,T,Quaternion.identity);
+          CharacterManager.allyList.Add(stone.gameObject);
+            }
             break;
         case CardType.Scissors:
+        if(Unit.CurrentManaScore>=1){
+          Unit.CurrentManaScore-=1;
           GameObject scissors=  Instantiate(Scissors,T,Quaternion.identity);
           CharacterManager.allyList.Add(scissors.gameObject);
+            }
             break;
         case CardType.Paper:
+        if(Unit.CurrentManaScore>=2){
+          Unit.CurrentManaScore-=2;
           GameObject paper= Instantiate(Paper,T,Quaternion.identity);
           CharacterManager.allyList.Add(paper.gameObject);
+            }
             break;
         default:
             Debug.LogError("Кнопка не назначенна");

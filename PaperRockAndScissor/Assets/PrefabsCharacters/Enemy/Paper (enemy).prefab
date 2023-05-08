@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2432453713354586006}
   - component: {fileID: 3093822414480269445}
   - component: {fileID: 6130552679470543772}
+  - component: {fileID: 901610820461350490}
   m_Layer: 0
   m_Name: Paper (enemy)
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2432453713354586009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5023484, y: -0.107997894, z: -0.27006376}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -67,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 95d1c2ccbd07b4e4b92be9631c9ba74a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,7 +129,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 60
   m_AngularSpeed: 120
@@ -153,18 +154,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ENtypeOfCard: 0
-  ENcurrentState: 0
-  Pos: {fileID: 0}
-  Enemy: {fileID: 0}
-  AttackDistance: 0
+  ENcurrentState: 1
+  Pos: {fileID: 109906269577277894}
   HealPoint: 0
   ENDamage: 0
-  speed: 0
   ModifyDamage: 0
-  AllyPerson: {fileID: 0}
   Tower: {fileID: 0}
-  agent: {fileID: 0}
-  rb: {fileID: 0}
+  agent: {fileID: 3093822414480269445}
+--- !u!114 &901610820461350490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432453713354586009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb890389ff550546b2f48a8dbf3ca22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 3093822414480269445}
 --- !u!1 &2432453714385675900
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3324577564137519212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

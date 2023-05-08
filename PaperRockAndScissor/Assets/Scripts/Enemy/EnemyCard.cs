@@ -8,39 +8,42 @@ public class EnemyCard : MonoBehaviour
 {
 [SerializeField] internal CardType ENtypeOfCard ;
 [SerializeField] internal StateUnit ENcurrentState;
-[SerializeField] Transform Pos;
-[SerializeField] Collider Enemy;
-[SerializeField ]float AttackDistance;
+[SerializeField] internal Transform Pos;
 public float HealPoint ;
 public float ENDamage ;
-public float speed;
 public float ModifyDamage;
-public Transform AllyPerson;
 public Transform Tower;
-public NavMeshAgent agent;
-public Rigidbody rb;
+[SerializeField] internal NavMeshAgent agent;
+ private void Awake(){ 
 
-  void Awake(){    
 ENcurrentState= StateUnit.WalkToCastle;
 }
 private void Update() {
  if(ENcurrentState == StateUnit.WalkToCastle){
     agent.SetDestination(Tower.position);   
 }   
+ if(HealPoint<=0f){
+    Destroy(gameObject);
+     CharacterManager.enemyList.Remove(gameObject);
+ } 
+}
+internal NavMeshAgent TempMethod(NavMeshAgent agent,Transform Tower){
+    if(ENcurrentState == StateUnit.WalkToCastle){
+            agent.SetDestination(Tower.position);
+        }
+         return agent;
 }
 private void OnTriggerEnter(Collider other) {
     EnemyCard enemyCard= gameObject.GetComponent<EnemyCard>();
     Card AllyCard= other.gameObject.GetComponent<Card>();
 
-  if(enemyCard.HealPoint<=0){
-            AllyCard._currentState = StateUnit.WalkToCastle;
+  if(enemyCard.HealPoint<=0f){
             Destroy(enemyCard.gameObject);
             CharacterManager.enemyList.Remove(enemyCard.gameObject);
-           
         }
         if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Stone && enemyCard.ENtypeOfCard== CardType.Scissors){ 
         HealPoint= ModAttack(AllyCard.Damage,HealPoint,ModifyDamage);
-          ComeBack();
+        ComeBack();
         }
         else if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Stone){
         HealPoint= Attack(AllyCard.Damage,HealPoint); 
@@ -84,4 +87,5 @@ NavMeshAgent NullAgent(NavMeshAgent agent){
     agent.isStopped = true;
     return agent;
 }
+
 }

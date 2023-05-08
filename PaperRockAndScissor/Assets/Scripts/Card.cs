@@ -10,25 +10,35 @@ public class Card : MonoBehaviour
 {
 [SerializeField] internal CardType typeOfCard ;
 [SerializeField] internal StateUnit _currentState;
-[SerializeField] Collider Ally;
 [SerializeField] Transform Pos;
 public float HealPoint;
 public float Damage;
 public float speed;
 public float ModifyDamage;
-private bool isAttacking; 
 public bool direction= false;
-private int tempAttack ;
 public Transform Tower;
 public NavMeshAgent agent;
 
-    void Awake(){   
+void Awake(){   
     _currentState = StateUnit.Ide;
+
 }
 private void Update(){
-        if(Input.GetMouseButton(0)){
+        if(Input.GetMouseButton(0) && gameObject!= null){
             transform.DOMove(GetMousePosition(),1);
-        }      
+        }     
+
+        if(HealPoint<=0f){
+            CharacterManager.enemyList.Remove(gameObject);
+            Destroy(gameObject);
+            
+        }
+         else if(HealPoint==0f){
+            CharacterManager.enemyList.Remove(gameObject);
+            Destroy(gameObject);
+            
+         }
+
 }
 public  Vector3 GetMousePosition()
 {
@@ -40,7 +50,7 @@ public  Vector3 GetMousePosition()
        return ray.GetPoint(enter);
   }
 public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
-        if(Input.GetMouseButton(0)&&!direction){
+        if(Input.GetMouseButton(0)&&!direction&&gameObject!= null){
             _currentState=StateUnit.WalkToCastle;
             direction = true;
             transform.DOMove(GetMousePosition(),1);
@@ -55,13 +65,13 @@ public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
     EnemyCard enemyCard= other.gameObject.GetComponent<EnemyCard>();
     Card AllyCard= gameObject.GetComponent<Card>();
 
-         if(AllyCard.HealPoint<=0){
-            enemyCard.ENcurrentState = StateUnit.WalkToCastle;
-            Destroy(AllyCard.gameObject);
+   if(AllyCard.HealPoint<=0f){
             CharacterManager.allyList.Remove(AllyCard.gameObject);
+            Destroy(AllyCard.gameObject);
             
-
         }
+       
+        
         if( other.tag=="Enemy" && enemyCard.ENtypeOfCard == CardType.Stone && AllyCard.typeOfCard== CardType.Scissors){ 
         HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,ModifyDamage);
           ComeBack();
@@ -111,4 +121,7 @@ NavMeshAgent NullAgent(NavMeshAgent agent){
     agent.isStopped = true;
     return agent;
 }
+
+
 }
+

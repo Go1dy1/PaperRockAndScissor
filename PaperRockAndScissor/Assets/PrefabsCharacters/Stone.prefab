@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 6675153624326610593}
   - component: {fileID: 7561721578498694180}
   - component: {fileID: -4226953416783162085}
+  - component: {fileID: 8270836648107097644}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Ally
@@ -143,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 298799e615fe5b6479f4b50a40f8b2ff, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -192,7 +193,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   typeOfCard: 0
   _currentState: 0
-  Ally: {fileID: 8908564322345977589}
   Pos: {fileID: 7818292807067437431}
   HealPoint: 0
   Damage: 0
@@ -227,7 +227,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
+  m_Speed: 2
   m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -239,3 +239,16 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &8270836648107097644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908564322345977591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce016b8885e76c4582d6b681ba5aeb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: -4226953416783162085}

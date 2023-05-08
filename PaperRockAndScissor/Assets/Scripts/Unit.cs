@@ -1,13 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class Unit : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public enum Stat{
-        S,
-        SS,
-        P
+ [SerializeField] TMP_Text CollectedMana;
+ private float ScoreSeconds = 2f;
+
+ static internal int CurrentManaScore = 0;  
+ private const int MaxScore = 10;
+ private IEnumerator Start() {
+    yield return StartCoroutine(ManaScore());;
+}
+void Awake()
+{
+    
+}
+
+    private IEnumerator ManaScore() {
+        while(true){ 
+        if(CurrentManaScore<MaxScore){
+            CurrentManaScore =CurrentManaScore+1;
+        }
+        yield return new WaitForSeconds(ScoreSeconds);
+        }
     }
+    void Update()
+    {
+       // Debug.Log(CurrentManaScore);
+        
+        CollectedMana.text= CurrentManaScore.ToString();
+    }
+
 }
