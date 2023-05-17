@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
+
 public class TowerManager : MonoBehaviour
 {
 [SerializeField] TMP_Text CollectedHeal;
@@ -18,6 +19,7 @@ internal static TowerManager Ally;
     {
         Ally= this;
         AllyPos = gameObject.transform;
+      
 
     }
 void Awake()
