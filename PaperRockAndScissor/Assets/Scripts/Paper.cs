@@ -7,7 +7,7 @@ public class Paper : Card
 {
 
 private void Awake() {
-     HealPoint= 8; Damage = 3;speed=2; ModifyDamage= 2;
+     HealPoint= 8; Damage = 3;speed=3.5f; ModifyDamage= 2.4f;
 }
 private IEnumerator Start()
 {

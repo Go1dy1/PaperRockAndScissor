@@ -8,6 +8,7 @@ using UnityEngine.AI;
 
 public class Card : MonoBehaviour
 {
+[SerializeField] GameObject Field;
 [SerializeField] internal CardType typeOfCard ;
 [SerializeField] internal StateUnit _currentState;
 [SerializeField] Transform Pos;
@@ -22,11 +23,11 @@ public NavMeshAgent agent;
 void Awake(){   
     _currentState = StateUnit.Ide;
 
+    agent = GetComponent<NavMeshAgent>();
+
+    
 }
 private void Update(){
-        if(Input.GetMouseButton(0) && gameObject!= null){
-            transform.DOMove(GetMousePosition(),1);
-        }     
 
         if(HealPoint<=0f){
             CharacterManager.enemyList.Remove(gameObject);
@@ -52,9 +53,11 @@ public  Vector3 GetMousePosition()
 public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
         if(Input.GetMouseButton(0)&&!direction&&gameObject!= null){
             _currentState=StateUnit.WalkToCastle;
-            direction = true;
-            transform.DOMove(GetMousePosition(),1);
+            if(PosCollider.AccsesPoint==true &&gameObject!=null){
+                direction = true;
+                transform.DOMove(GetMousePosition(),1);
             
+            }
         }
         if(direction &&_currentState == StateUnit.WalkToCastle){
             agent.SetDestination(Tower.position);
@@ -73,7 +76,7 @@ public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
        
         
         if( other.tag=="Enemy" && enemyCard.ENtypeOfCard == CardType.Stone && AllyCard.typeOfCard== CardType.Scissors){ 
-        HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,ModifyDamage);
+        HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,enemyCard.ModifyDamage);
           ComeBack();
         }
         else if(other.tag=="Enemy" && enemyCard.ENtypeOfCard == CardType.Stone){
@@ -82,7 +85,7 @@ public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
         }
         
         if(other.tag=="Enemy" && enemyCard.ENtypeOfCard == CardType.Paper&&AllyCard.typeOfCard== CardType.Stone){
-        HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,ModifyDamage);
+        HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,enemyCard.ModifyDamage);
         ComeBack();
         }
         else if(other.tag=="Enemy" && enemyCard.ENtypeOfCard == CardType.Paper){
@@ -91,7 +94,7 @@ public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
         }
 
         if(other.tag=="Enemy" && enemyCard.ENtypeOfCard == CardType.Scissors&& AllyCard.typeOfCard== CardType.Paper){
-         HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,ModifyDamage);
+         HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,enemyCard.ModifyDamage);
         ComeBack(); 
         }
         else if(other.tag=="Enemy" && enemyCard.ENtypeOfCard == CardType.Scissors){
@@ -108,7 +111,7 @@ public float ModAttack(float damage, float health, float modifyDamage){
         return health;
 }
 private void ComeBack(){
-    transform.DOMove(Pos.position,0.2f,false);
+   if(gameObject!=null)transform.DOMove(Pos.position,0.2f,false);
     StartCoroutine(NavmeshStart());
 }
 IEnumerator NavmeshStart()

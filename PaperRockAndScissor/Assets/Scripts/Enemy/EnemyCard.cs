@@ -13,18 +13,24 @@ public float HealPoint ;
 public float ENDamage ;
 public float ModifyDamage;
 public Transform Tower;
+public float Speed;
 [SerializeField] internal NavMeshAgent agent;
  private void Awake(){ 
+    agent = GetComponent<NavMeshAgent>();
 
-ENcurrentState= StateUnit.WalkToCastle;
+    ENcurrentState= StateUnit.WalkToCastle;
+
+    
 }
 private void Update() {
+
+agent.speed = Speed;
  if(ENcurrentState == StateUnit.WalkToCastle){
     agent.SetDestination(Tower.position);   
 }   
  if(HealPoint<=0f){
     Destroy(gameObject);
-     CharacterManager.enemyList.Remove(gameObject);
+    CharacterManager.enemyList.Remove(gameObject);
  } 
 }
 internal NavMeshAgent TempMethod(NavMeshAgent agent,Transform Tower){
@@ -42,7 +48,7 @@ private void OnTriggerEnter(Collider other) {
             CharacterManager.enemyList.Remove(enemyCard.gameObject);
         }
         if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Stone && enemyCard.ENtypeOfCard== CardType.Scissors){ 
-        HealPoint= ModAttack(AllyCard.Damage,HealPoint,ModifyDamage);
+        HealPoint= ModAttack(AllyCard.Damage,HealPoint,AllyCard.ModifyDamage);
         ComeBack();
         }
         else if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Stone){
@@ -51,7 +57,7 @@ private void OnTriggerEnter(Collider other) {
         }
 
         if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Paper && enemyCard.ENtypeOfCard== CardType.Stone){
-        HealPoint= ModAttack(AllyCard.Damage,HealPoint,ModifyDamage);
+        HealPoint= ModAttack(AllyCard.Damage,HealPoint,AllyCard.ModifyDamage);
         ComeBack();
         }
         else if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Paper){
@@ -60,7 +66,7 @@ private void OnTriggerEnter(Collider other) {
         }
         
         if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Scissors && enemyCard.ENtypeOfCard== CardType.Paper){
-        HealPoint= ModAttack(AllyCard.Damage,HealPoint,ModifyDamage);
+        HealPoint= ModAttack(AllyCard.Damage,HealPoint,AllyCard.ModifyDamage);
         ComeBack(); 
         }
         else if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Scissors){
@@ -77,7 +83,7 @@ public float ModAttack(float damage, float health, float modifyDamage){
         return health;
 }
 private void ComeBack(){
-    transform.DOMove(Pos.position,0.2f,false);
+   if(gameObject!=null)transform.DOMove(Pos.position,0.2f,false);
 }
 public NavMeshAgent FollowAttack(NavMeshAgent agent, Transform AllyPerson){
     agent.SetDestination(AllyPerson.position);

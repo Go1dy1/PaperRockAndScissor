@@ -9,17 +9,29 @@ public class UnitCreator : MonoBehaviour
 {
   [SerializeField] Camera _camera;
   [SerializeField] private Button BStone,BScissors,BPaper;
-  Vector3 T= new Vector3(0f,1f,-9.94f);
+  private Vector3 T;
    public GameObject Stone;
    public GameObject Scissors;
    public GameObject Paper;
    
 
-private void Start()
-{
+private IEnumerator SpawnEnemy(){
+  while(true){
+      T = new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -10f);
+    
+    yield return new WaitForSeconds(5f);
+  }
+
+}
+private void Awake() {
   BStone.onClick.AddListener(()=>ChoiceCard(CardType.Stone));
   BScissors.onClick.AddListener(()=>ChoiceCard(CardType.Scissors));
   BPaper.onClick.AddListener(()=>ChoiceCard(CardType.Paper));
+}
+private IEnumerator Start()
+{
+  yield return StartCoroutine(SpawnEnemy());
+
 }
 public void ChoiceCard(CardType card)
 {

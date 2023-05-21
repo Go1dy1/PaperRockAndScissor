@@ -14,7 +14,6 @@ float MinDist = Mathf.Infinity;
 
         float tempDistanceBetObj= Vector3.Distance(transform.position,Enemy.transform.position);
 
-
         if(Enemy.activeSelf &&tempDistanceBetObj<MinDist){
                     currentPoint = Enemy;
                     MinDist = tempDistanceBetObj;

@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class Scissors : Card
 {
 private void Awake() {
-     HealPoint= 8; Damage = 3;speed=2; ModifyDamage= 2;
+     HealPoint= 6; Damage = 4;speed=4.5f; ModifyDamage= 2f;
 }
 private IEnumerator Start()
 {

@@ -6,7 +6,7 @@ public class EnemyScissors : EnemyCard
 {
     // Start is called before the first frame update
  private void Awake() {
-    HealPoint= 8; ENDamage = 3; ModifyDamage= 2;
+    HealPoint= 6; ENDamage = 4;Speed=4.5f; ModifyDamage= 2f;
 }
 
     private IEnumerator Start()

@@ -13,13 +13,10 @@ internal CardType cardType;
 
 //= new Vector3(0,0.44f,2.6f)
 private IEnumerator Start() {
+    yield return new WaitForSeconds(1f);
     yield return StartCoroutine(SpawnEnemy());
 }
-void Awake()
-{
- T = new Vector3(UnityEngine.Random.Range(-4.5f,3.1f), 0.44f, UnityEngine.Random.Range(-2.5f, 3.35f));
- CardType cardType = (CardType)UnityEngine.Random.Range(0, 2);
-}
+
 
     void Update()
     {
