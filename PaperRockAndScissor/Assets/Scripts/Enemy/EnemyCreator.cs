@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class EnemyCreator : MonoBehaviour
 {
-private Vector3 T ;
 [SerializeField] GameObject stone;
 [SerializeField] GameObject paper;
 [SerializeField] GameObject scissors;
-internal CardType cardType;
+//internal CardType cardType;
 
-//= new Vector3(0,0.44f,2.6f)
+internal static float TimetoSpawn = 5f;
+
 private IEnumerator Start() {
     yield return new WaitForSeconds(1f);
     yield return StartCoroutine(SpawnEnemy());
@@ -20,9 +20,8 @@ private IEnumerator Start() {
 
     void Update()
     {
-      //  StartCoroutine("GetRandomCardType");
- 
-   
+      
+      Debug.Log("TimetoSpawn:"+TimetoSpawn); 
        
     }
 
@@ -55,8 +54,8 @@ private IEnumerator SpawnEnemy()
         // Создаем новый объект в зависимости от типа карты
         GameObject newEnemy = GetRandomCardType(cardType, spawnPosition);
 
-        // Ждем 5 секунд перед созданием следующего объекта
-        yield return new WaitForSeconds(5f);
+        // Ждем TimetoSpawn секунд перед созданием следующего объекта
+        yield return new WaitForSeconds(TimetoSpawn);
     }
 }
 

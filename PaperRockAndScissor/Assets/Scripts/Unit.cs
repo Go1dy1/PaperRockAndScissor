@@ -5,9 +5,9 @@ using TMPro;
 public class Unit : MonoBehaviour
 {
  [SerializeField] TMP_Text CollectedMana;
- private float ScoreSeconds = 2f;
+ private float ScoreSeconds = 3f;
 
- static internal int CurrentManaScore = 0;  
+ static internal int CurrentManaScore =1;  
  private const int MaxScore = 10;
  private IEnumerator Start() {
     yield return StartCoroutine(ManaScore());;

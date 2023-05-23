@@ -13,6 +13,7 @@ public class UnitCreator : MonoBehaviour
    public GameObject Stone;
    public GameObject Scissors;
    public GameObject Paper;
+   bool IsLocked = false;
    
 
 private IEnumerator SpawnEnemy(){
@@ -34,6 +35,65 @@ private IEnumerator Start()
 
 }
 public void ChoiceCard(CardType card)
+{
+  if(!IsLocked){
+
+           
+            
+
+     switch (card)
+    {
+        case CardType.Stone :
+            if(Unit.CurrentManaScore>=3){
+               IsLocked = true;
+            StartCoroutine(UnlockButtonAfterDelay(1.5f));
+              Unit.CurrentManaScore-=3;
+          GameObject stone= Instantiate(Stone,T,Quaternion.identity);
+          CharacterManager.allyList.Add(stone.gameObject);
+            }
+            break;
+        case CardType.Scissors:
+        if(Unit.CurrentManaScore>=1){
+           IsLocked = true;
+            StartCoroutine(UnlockButtonAfterDelay(1.5f));
+          Unit.CurrentManaScore-=1;
+          GameObject scissors=  Instantiate(Scissors,T,Quaternion.identity);
+          CharacterManager.allyList.Add(scissors.gameObject);
+            }
+            break;
+        case CardType.Paper:
+        if(Unit.CurrentManaScore>=2){
+           IsLocked = true;
+            StartCoroutine(UnlockButtonAfterDelay(1.5f));
+          Unit.CurrentManaScore-=2;
+          GameObject paper= Instantiate(Paper,T,Quaternion.identity);
+          CharacterManager.allyList.Add(paper.gameObject);
+            }
+            break;
+        default:
+            Debug.LogError("Кнопка не назначенна");
+            break;
+    }
+
+  }
+}
+private IEnumerator UnlockButtonAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        IsLocked = false;
+        
+    }
+
+
+}
+public enum CardType{
+    Stone,
+    Scissors,
+    Paper
+  }
+
+
+/*public void ChoiceCard(CardType card)
 {
      switch (card)
     {
@@ -63,11 +123,4 @@ public void ChoiceCard(CardType card)
             break;
     }
 }
-}
-public enum CardType{
-    Stone,
-    Scissors,
-    Paper
-  }
-
-
+*/

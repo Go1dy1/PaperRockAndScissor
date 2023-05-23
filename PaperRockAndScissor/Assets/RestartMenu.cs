@@ -22,12 +22,14 @@ public void LEVELS(ButtonType buttonType){
      switch (buttonType)
     {
         case ButtonType.Restart:
+        Time.timeScale = 1f;
            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+0);
-           Time.timeScale = 1f;
+           
             break;
         case ButtonType.Home:
+        Time.timeScale = 1f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
-            Time.timeScale = 1f;
+            
             break;
         default:
             Debug.LogError("Кнопка не назначенна");

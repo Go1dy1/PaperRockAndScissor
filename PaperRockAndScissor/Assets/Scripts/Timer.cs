@@ -7,11 +7,12 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] internal GameObject Menu;
-    public float timeStart = 10;
+    [SerializeField] internal GameObject Menu,Lose, Win, Tie;
+    public float timeStart = 5f;
     [SerializeField] TMP_Text TimerText;
     const float lowTime = 0; 
     bool CheckTime = false;
+    public PassADS ad;
     void Start()
     {
         TimerText.text = timeStart.ToString();
@@ -20,15 +21,22 @@ public class Timer : MonoBehaviour
    
     void Update()
     {
+//        Debug.Log(Time.timeScale);
+    //     Debug.Log(CheckTime);
+
         timeStart-=  Time.deltaTime;
         TimerText.text  = Mathf.Round(timeStart).ToString();
-        if(timeStart<=lowTime){
-            if(CheckTime){
-            Time.timeScale = 0f;
-            CheckTime= false;
-            }
-            timeStart= 0;
+
+        if(timeStart<=lowTime||EnemyCrush.HealPoint<=lowTime||TowerManager.HealPoint<=lowTime){
+            
+           timeStart= lowTime;
             Menu.SetActive(true);
+
+            if(EnemyCrush.HealPoint> TowerManager.HealPoint)Lose.SetActive(true);
+            else if(EnemyCrush.HealPoint< TowerManager.HealPoint)Win.SetActive(true);
+            else Tie.SetActive(true);
+            ad.ShowAd();
+
         }
     }
 }

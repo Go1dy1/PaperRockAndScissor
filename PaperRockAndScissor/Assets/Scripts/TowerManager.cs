@@ -9,11 +9,12 @@ using TMPro;
 public class TowerManager : MonoBehaviour
 {
 [SerializeField] TMP_Text CollectedHeal;
-private int HealPoint;
+static internal int HealPoint;
 [SerializeField] GameObject MyCastle;  
 private Vector3 myfront = new Vector3(0.04f,0.913f,-14.298f);
 private Vector3 myback = new Vector3(0f,0.913f,-14.304f);
 internal Transform AllyPos;
+private const int zero = 0; 
 internal static TowerManager Ally;
     void Start()
     {
@@ -24,7 +25,7 @@ internal static TowerManager Ally;
     }
 void Awake()
 {
-  HealPoint= 15;
+  HealPoint= 5;
 }
 void OnTriggerEnter(Collider other)
 {
@@ -34,10 +35,11 @@ void OnTriggerEnter(Collider other)
     CharacterManager.enemyList.Remove(other.gameObject);
     Destroy(other.gameObject);
       
-    HealPoint= HealPoint-1;
+    if(HealPoint>zero)HealPoint= HealPoint-1;
     HealManager();
   }
 }
+
 public void HealManager(){
   CollectedHeal.text= HealPoint.ToString();
 }
