@@ -10,7 +10,11 @@ float MinDist = Mathf.Infinity;
     void Update()
     {
         foreach(GameObject Enemy in CharacterManager.enemyList){
+          if (Enemy!=null)
+          {
             EnemyCard EnemyCard = Enemy.GetComponent<EnemyCard>();
+          
+            
 
         float tempDistanceBetObj= Vector3.Distance(transform.position,Enemy.transform.position);
 
@@ -21,6 +25,7 @@ float MinDist = Mathf.Infinity;
 
         if(currentPoint != null && MinDist < CharacterManager.MinDistance){
             agent.SetDestination(currentPoint.transform.position);
+        }
         }
         }
 

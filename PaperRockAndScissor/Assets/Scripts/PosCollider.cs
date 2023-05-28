@@ -16,16 +16,10 @@ public class PosCollider : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider == clickAreaCollider)
-                {
-                    AccsesPoint= true;
-                    Debug.Log("True");
-                }
-                else
-                {
-                    AccsesPoint= false;
-                    Debug.Log("False");
-                }
+                if (hit.collider == clickAreaCollider)AccsesPoint= true;
+                else AccsesPoint= false;
+                    
+                
             }
         }
     }

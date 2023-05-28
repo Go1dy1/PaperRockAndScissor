@@ -18,13 +18,6 @@ private IEnumerator Start() {
 }
 
 
-    void Update()
-    {
-      
-      Debug.Log("TimetoSpawn:"+TimetoSpawn); 
-       
-    }
-
     public GameObject GetRandomCardType(CardType cardType,Vector3 T){
     switch (cardType){   
         case CardType.Stone:

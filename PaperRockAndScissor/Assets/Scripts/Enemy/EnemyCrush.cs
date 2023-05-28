@@ -8,8 +8,8 @@ public class EnemyCrush : MonoBehaviour
 [SerializeField] TMP_Text CollectedHeal;
 static internal int HealPoint;
 [SerializeField] GameObject EnemyCastle;
-private Vector3 enemyfront = new Vector3(0.04f,0.913f,7.08f);
-private Vector3 enemyback = new Vector3(0f,0.913f,7.02f);
+private Vector3 enemyfront = new Vector3(0.04f,0f,9.36f);
+private Vector3 enemyback = new Vector3(0f,0f,9.44f);
 private const int zero = 0; 
 
 void Awake(){

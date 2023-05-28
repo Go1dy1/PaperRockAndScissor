@@ -18,8 +18,8 @@ public class UnitCreator : MonoBehaviour
 
 private IEnumerator SpawnEnemy(){
   while(true){
-      T = new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -10f);
-    
+      T = new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f);
+
     yield return new WaitForSeconds(5f);
   }
 
@@ -38,16 +38,13 @@ public void ChoiceCard(CardType card)
 {
   if(!IsLocked){
 
-           
-            
-
      switch (card)
     {
         case CardType.Stone :
-            if(Unit.CurrentManaScore>=3){
+            if(Unit.CurrentManaScore>=2){
                IsLocked = true;
             StartCoroutine(UnlockButtonAfterDelay(1.5f));
-              Unit.CurrentManaScore-=3;
+              Unit.CurrentManaScore-=2;
           GameObject stone= Instantiate(Stone,T,Quaternion.identity);
           CharacterManager.allyList.Add(stone.gameObject);
             }
@@ -77,13 +74,11 @@ public void ChoiceCard(CardType card)
 
   }
 }
-private IEnumerator UnlockButtonAfterDelay(float delay)
-    {
+private IEnumerator UnlockButtonAfterDelay(float delay){
         yield return new WaitForSeconds(delay);
         IsLocked = false;
         
     }
-
 
 }
 public enum CardType{
@@ -93,34 +88,3 @@ public enum CardType{
   }
 
 
-/*public void ChoiceCard(CardType card)
-{
-     switch (card)
-    {
-        case CardType.Stone :
-            if(Unit.CurrentManaScore>=3){
-              Unit.CurrentManaScore-=3;
-          GameObject stone= Instantiate(Stone,T,Quaternion.identity);
-          CharacterManager.allyList.Add(stone.gameObject);
-            }
-            break;
-        case CardType.Scissors:
-        if(Unit.CurrentManaScore>=1){
-          Unit.CurrentManaScore-=1;
-          GameObject scissors=  Instantiate(Scissors,T,Quaternion.identity);
-          CharacterManager.allyList.Add(scissors.gameObject);
-            }
-            break;
-        case CardType.Paper:
-        if(Unit.CurrentManaScore>=2){
-          Unit.CurrentManaScore-=2;
-          GameObject paper= Instantiate(Paper,T,Quaternion.identity);
-          CharacterManager.allyList.Add(paper.gameObject);
-            }
-            break;
-        default:
-            Debug.LogError("Кнопка не назначенна");
-            break;
-    }
-}
-*/

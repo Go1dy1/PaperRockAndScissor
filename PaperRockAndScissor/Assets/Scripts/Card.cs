@@ -8,37 +8,29 @@ using UnityEngine.AI;
 
 public class Card : MonoBehaviour
 {
-[SerializeField] GameObject Field;
 [SerializeField] internal CardType typeOfCard ;
 [SerializeField] internal StateUnit _currentState;
 [SerializeField] Transform Pos;
-public float HealPoint;
-public float Damage;
-public float speed;
-public float ModifyDamage;
-public bool direction= false;
+public ParticleSystem Puff;
+internal float HealPoint;
+internal float Damage;
+internal float speed;
+internal float ModifyDamage;
+internal bool direction= false;
 public Transform Tower;
 public NavMeshAgent agent;
 
 void Awake(){   
     _currentState = StateUnit.Ide;
-
-    agent = GetComponent<NavMeshAgent>();
-
-    
+    agent = GetComponent<NavMeshAgent>();    
 }
-private void Update(){
+void Update(){
 
         if(HealPoint<=0f){
             CharacterManager.enemyList.Remove(gameObject);
             Destroy(gameObject);
             
         }
-         else if(HealPoint==0f){
-            CharacterManager.enemyList.Remove(gameObject);
-            Destroy(gameObject);
-            
-         }
 
 }
 public  Vector3 GetMousePosition()
@@ -69,6 +61,7 @@ public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
     Card AllyCard= gameObject.GetComponent<Card>();
 
    if(AllyCard.HealPoint<=0f){
+            Instantiate(Puff,gameObject.transform.position,Quaternion.identity);
             CharacterManager.allyList.Remove(AllyCard.gameObject);
             Destroy(AllyCard.gameObject);
             

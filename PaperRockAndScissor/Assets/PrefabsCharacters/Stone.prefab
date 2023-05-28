@@ -194,11 +194,7 @@ MonoBehaviour:
   typeOfCard: 0
   _currentState: 0
   Pos: {fileID: 7818292807067437431}
-  HealPoint: 0
-  Damage: 0
-  speed: 0
-  ModifyDamage: 0
-  direction: 0
+  Puff: {fileID: 9112134744152255864, guid: e581f7a5e3028f34d9ecda742866e563, type: 3}
   Tower: {fileID: 0}
   agent: {fileID: -4226953416783162085}
 --- !u!54 &7561721578498694180
@@ -227,7 +223,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 2.5
   m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120

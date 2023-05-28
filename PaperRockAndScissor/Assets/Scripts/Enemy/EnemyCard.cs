@@ -9,28 +9,26 @@ public class EnemyCard : MonoBehaviour
 [SerializeField] internal CardType ENtypeOfCard ;
 [SerializeField] internal StateUnit ENcurrentState;
 [SerializeField] internal Transform Pos;
+public ParticleSystem Puff;
 public float HealPoint ;
 public float ENDamage ;
 public float ModifyDamage;
 public Transform Tower;
 public float Speed;
+
 [SerializeField] internal NavMeshAgent agent;
  private void Awake(){ 
     agent = GetComponent<NavMeshAgent>();
-
     ENcurrentState= StateUnit.WalkToCastle;
 
     
 }
-private void Update() {
+void Update() {
 
-agent.speed = Speed;
- if(ENcurrentState == StateUnit.WalkToCastle){
-    agent.SetDestination(Tower.position);   
-}   
  if(HealPoint<=0f){
-    Destroy(gameObject);
+   
     CharacterManager.enemyList.Remove(gameObject);
+    Destroy(gameObject);
  } 
 }
 internal NavMeshAgent TempMethod(NavMeshAgent agent,Transform Tower){
@@ -44,8 +42,9 @@ private void OnTriggerEnter(Collider other) {
     Card AllyCard= other.gameObject.GetComponent<Card>();
 
   if(enemyCard.HealPoint<=0f){
-            Destroy(enemyCard.gameObject);
+            Instantiate(Puff,gameObject.transform.position,Quaternion.identity);
             CharacterManager.enemyList.Remove(enemyCard.gameObject);
+            Destroy(enemyCard.gameObject);
         }
         if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Stone && enemyCard.ENtypeOfCard== CardType.Scissors){ 
         HealPoint= ModAttack(AllyCard.Damage,HealPoint,AllyCard.ModifyDamage);

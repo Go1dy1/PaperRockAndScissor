@@ -11,8 +11,8 @@ public class Timer : MonoBehaviour
     public float timeStart = 5f;
     [SerializeField] TMP_Text TimerText;
     const float lowTime = 0; 
-    bool CheckTime = false;
     public PassADS ad;
+    private bool ShowAdds =false;
     void Start()
     {
         TimerText.text = timeStart.ToString();
@@ -35,7 +35,12 @@ public class Timer : MonoBehaviour
             if(EnemyCrush.HealPoint> TowerManager.HealPoint)Lose.SetActive(true);
             else if(EnemyCrush.HealPoint< TowerManager.HealPoint)Win.SetActive(true);
             else Tie.SetActive(true);
-            ad.ShowAd();
+            if(!ShowAdds){
+                ShowAdds= true;    
+                ad.ShowAd();
+
+                }
+            
 
         }
     }

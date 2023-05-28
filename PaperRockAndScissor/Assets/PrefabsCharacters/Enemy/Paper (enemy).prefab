@@ -78,7 +78,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2.8
+  m_Speed: 3.3
   m_Acceleration: 8
   avoidancePriority: 60
   m_AngularSpeed: 120
@@ -105,6 +105,7 @@ MonoBehaviour:
   ENtypeOfCard: 2
   ENcurrentState: 1
   Pos: {fileID: 109906269577277894}
+  Puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
   HealPoint: 0
   ENDamage: 0
   ModifyDamage: 0
@@ -210,6 +211,18 @@ PrefabInstance:
     - target: {fileID: 1872945664600468748, guid: 3d1e6c0ad54995845a41d96f70e9cdc2, type: 3}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872945664600468748, guid: 3d1e6c0ad54995845a41d96f70e9cdc2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872945664600468748, guid: 3d1e6c0ad54995845a41d96f70e9cdc2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1872945664600468748, guid: 3d1e6c0ad54995845a41d96f70e9cdc2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 1872945664600468748, guid: 3d1e6c0ad54995845a41d96f70e9cdc2, type: 3}
       propertyPath: m_LocalPosition.x

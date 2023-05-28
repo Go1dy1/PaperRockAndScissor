@@ -11,8 +11,8 @@ public class TowerManager : MonoBehaviour
 [SerializeField] TMP_Text CollectedHeal;
 static internal int HealPoint;
 [SerializeField] GameObject MyCastle;  
-private Vector3 myfront = new Vector3(0.04f,0.913f,-14.298f);
-private Vector3 myback = new Vector3(0f,0.913f,-14.304f);
+private Vector3 myfront = new Vector3(0.04f,0f,-19.298f);
+private Vector3 myback = new Vector3(0f,0f,-19.66f);
 internal Transform AllyPos;
 private const int zero = 0; 
 internal static TowerManager Ally;

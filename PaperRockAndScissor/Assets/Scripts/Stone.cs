@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class Stone : Card
 {
 private void Awake() {
-    HealPoint= 12; Damage = 3;speed=2; ModifyDamage= 2f;
+    HealPoint= 10; Damage = 3;speed=2; ModifyDamage= 2f;
     
 }
 private IEnumerator Start()
