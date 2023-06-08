@@ -10,6 +10,7 @@ public class EnemyCard : MonoBehaviour
 [SerializeField] internal StateUnit ENcurrentState;
 [SerializeField] internal Transform Pos;
 public ParticleSystem Puff;
+public AudioSource Death;
 public float HealPoint ;
 public float ENDamage ;
 public float ModifyDamage;
@@ -43,6 +44,7 @@ private void OnTriggerEnter(Collider other) {
 
   if(enemyCard.HealPoint<=0f){
             Instantiate(Puff,gameObject.transform.position,Quaternion.identity);
+            Instantiate(Death,gameObject.transform.position,Quaternion.identity);
             CharacterManager.enemyList.Remove(enemyCard.gameObject);
             Destroy(enemyCard.gameObject);
         }

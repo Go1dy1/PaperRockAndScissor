@@ -21,8 +21,7 @@ public class Timer : MonoBehaviour
    
     void Update()
     {
-//        Debug.Log(Time.timeScale);
-    //     Debug.Log(CheckTime);
+
 
         timeStart-=  Time.deltaTime;
         TimerText.text  = Mathf.Round(timeStart).ToString();

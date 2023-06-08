@@ -151,6 +151,8 @@ MonoBehaviour:
   _currentState: 0
   Pos: {fileID: 1814312510215239179}
   Puff: {fileID: 9112134744152255864, guid: e581f7a5e3028f34d9ecda742866e563, type: 3}
+  Death: {fileID: 8908036723534655493, guid: c1025e54e57295746b891c23d1a71be8, type: 3}
+  HealPoint: 0
   Tower: {fileID: 0}
   agent: {fileID: 3529489758660471399}
 --- !u!114 &8705686588543894945
@@ -209,6 +211,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 294277622736659503, guid: 3afe1b8722a0c774cb35cc07b9b6e211, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 294277622736659503, guid: 3afe1b8722a0c774cb35cc07b9b6e211, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -248,6 +254,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5542214313790877527, guid: 3afe1b8722a0c774cb35cc07b9b6e211, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ea8a245800addcf4e9131248f9149c49, type: 2}
     - target: {fileID: 8610463319528077017, guid: 3afe1b8722a0c774cb35cc07b9b6e211, type: 3}
       propertyPath: m_Name
       value: Paper1

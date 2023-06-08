@@ -27,8 +27,6 @@ void Awake()
     }
     void Update()
     {
-       // Debug.Log(CurrentManaScore);
-        
         CollectedMana.text= CurrentManaScore.ToString();
     }
 

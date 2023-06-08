@@ -151,6 +151,7 @@ MonoBehaviour:
   ENcurrentState: 1
   Pos: {fileID: 4935637670809631299}
   Puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
+  Death: {fileID: 8908036723534655493, guid: 6393bf717f9d1c34cbdfb082d5e1aa37, type: 3}
   HealPoint: 0
   ENDamage: 0
   ModifyDamage: 0

@@ -12,7 +12,8 @@ public class Card : MonoBehaviour
 [SerializeField] internal StateUnit _currentState;
 [SerializeField] Transform Pos;
 public ParticleSystem Puff;
-internal float HealPoint;
+public AudioSource Death;
+public float HealPoint;
 internal float Damage;
 internal float speed;
 internal float ModifyDamage;
@@ -59,9 +60,9 @@ public NavMeshAgent TempMethod(NavMeshAgent agent, Transform Tower){
  private void OnTriggerEnter(Collider other) {
     EnemyCard enemyCard= other.gameObject.GetComponent<EnemyCard>();
     Card AllyCard= gameObject.GetComponent<Card>();
-
    if(AllyCard.HealPoint<=0f){
             Instantiate(Puff,gameObject.transform.position,Quaternion.identity);
+            Instantiate(Death,gameObject.transform.position,Quaternion.identity);
             CharacterManager.allyList.Remove(AllyCard.gameObject);
             Destroy(AllyCard.gameObject);
             

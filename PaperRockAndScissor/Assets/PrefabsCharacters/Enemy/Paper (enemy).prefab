@@ -106,6 +106,7 @@ MonoBehaviour:
   ENcurrentState: 1
   Pos: {fileID: 109906269577277894}
   Puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
+  Death: {fileID: 8908036723534655493, guid: c1025e54e57295746b891c23d1a71be8, type: 3}
   HealPoint: 0
   ENDamage: 0
   ModifyDamage: 0
@@ -214,7 +215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1872945664600468748, guid: 3d1e6c0ad54995845a41d96f70e9cdc2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.12
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1872945664600468748, guid: 3d1e6c0ad54995845a41d96f70e9cdc2, type: 3}
       propertyPath: m_LocalScale.y

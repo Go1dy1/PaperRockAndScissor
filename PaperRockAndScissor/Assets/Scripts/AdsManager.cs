@@ -15,10 +15,10 @@ void Awake()
     InitializeAds();
 }
  public void InitializeAds(){
-    gameID = (Application.platform== RuntimePlatform. IPhonePlayer)? IOsId: AndroidId; 
+    gameID = (Application.platform== RuntimePlatform.IPhonePlayer)? IOsId: AndroidId; 
     Advertisement.Initialize(gameID, TestADS, this);
  }
-
+//IPhonePlayer
     public void OnInitializationComplete()
     {
         Debug.Log("Unity ADS Sucsess");

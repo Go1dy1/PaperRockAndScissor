@@ -137,6 +137,8 @@ MonoBehaviour:
   _currentState: 0
   Pos: {fileID: 6183582131925318414}
   Puff: {fileID: 9112134744152255864, guid: e581f7a5e3028f34d9ecda742866e563, type: 3}
+  Death: {fileID: 8908036723534655493, guid: 6393bf717f9d1c34cbdfb082d5e1aa37, type: 3}
+  HealPoint: 0
   Tower: {fileID: 0}
   agent: {fileID: 8936971858229028706}
 --- !u!114 &-6366247390282742426
