@@ -427,6 +427,7 @@
 "Assets/Low Poly Fire/AurynSky/Forest Pack/Scripts/Rotator.cs"
 "Assets/Low Poly Fire/AurynSky/Forest Pack/Scripts/WheelController.cs"
 "Assets/MENU/ButtonManager.cs"
+"Assets/PausePanel.cs"
 "Assets/Scripts/AdsManager.cs"
 "Assets/Scripts/AllyTouching.cs"
 "Assets/Scripts/Card.cs"
