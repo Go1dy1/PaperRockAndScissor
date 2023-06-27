@@ -17,7 +17,7 @@ adID= (Application.platform == RuntimePlatform.IPhonePlayer)? IOsId: AndroidId;
 
 public void LoadAd()
 {
- //   Debug.Log("Loading Ad:" + adID);
+  // Debug.Log("Loading Ad:" + adID);
     Advertisement.Load(adID, this);
 }
 
@@ -29,7 +29,9 @@ public void ShowAd()
 
     public void OnUnityAdsAdLoaded(string placementId)
     {
-        throw new System.NotImplementedException();
+        
+        print("AdsLoaded");
+        
     }
 
     public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message)
@@ -44,7 +46,7 @@ public void ShowAd()
 
     public void OnUnityAdsShowStart(string placementId)
     {
-        throw new System.NotImplementedException();
+        print("AdsStart");
     }
 
     public void OnUnityAdsShowClick(string placementId)
@@ -57,3 +59,4 @@ public void ShowAd()
         LoadAd();
     }
 }
+

@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 using UnityEngine.AI;
+
 public class Scissors : Card
 {
 private void Awake() {
@@ -17,9 +17,10 @@ private IEnumerator Start()
 void Update()
     {
         
-       TempMethod(agent,Tower);
+        TempMethod(agent,Tower);
 
       
     }
     
 }
+
