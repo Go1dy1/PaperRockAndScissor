@@ -336,12 +336,12 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Zenject.ref.dll"
-"Assets/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/SceneTestFixture.cs"
-"Assets/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/SceneTestFixtureSceneReference.cs"
-"Assets/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/ValidateOnlyAttribute.cs"
-"Assets/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/ZenjectIntegrationTestFixture.cs"
-"Assets/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/ZenjectTestUtil.cs"
-"Assets/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/ZenjectUnitTestFixture.cs"
+"Assets/Plugins/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/SceneTestFixture.cs"
+"Assets/Plugins/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/SceneTestFixtureSceneReference.cs"
+"Assets/Plugins/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/ValidateOnlyAttribute.cs"
+"Assets/Plugins/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/ZenjectIntegrationTestFixture.cs"
+"Assets/Plugins/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/ZenjectTestUtil.cs"
+"Assets/Plugins/Zenject/Plugins/Zenject/OptionalExtras/TestFramework/ZenjectUnitTestFixture.cs"
 -langversion:9.0
 
 /deterministic
