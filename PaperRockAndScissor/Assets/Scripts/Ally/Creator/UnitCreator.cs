@@ -1,19 +1,16 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-
 
 public class UnitCreator : MonoBehaviour
 {
   [SerializeField] Camera _camera;
   [SerializeField] private Button BStone,BScissors,BPaper;
   private Vector3 T;
-   public GameObject Stone;
-   public GameObject Scissors;
-   public GameObject Paper;
-   bool IsLocked = false;
+  public GameObject Stone;
+  public GameObject Scissors;
+  public GameObject Paper;
+  bool IsLocked = false;
    
 
 private IEnumerator SpawnEnemy(){
@@ -41,28 +38,28 @@ public void ChoiceCard(CardType card)
      switch (card)
     {
         case CardType.Stone :
-            if(Unit.CurrentManaScore>=2){
+            if(Unit.currentManaScore>=2){
                IsLocked = true;
             StartCoroutine(UnlockButtonAfterDelay(1.5f));
-              Unit.CurrentManaScore-=2;
+              Unit.currentManaScore-=2;
           GameObject stone= Instantiate(Stone,T,Quaternion.identity);
           CharacterManager.allyList.Add(stone.gameObject);
             }
             break;
         case CardType.Scissors:
-        if(Unit.CurrentManaScore>=1){
+        if(Unit.currentManaScore>=1){
            IsLocked = true;
             StartCoroutine(UnlockButtonAfterDelay(1.5f));
-          Unit.CurrentManaScore-=1;
+          Unit.currentManaScore-=1;
           GameObject scissors=  Instantiate(Scissors,T,Quaternion.identity);
           CharacterManager.allyList.Add(scissors.gameObject);
             }
             break;
         case CardType.Paper:
-        if(Unit.CurrentManaScore>=2){
+        if(Unit.currentManaScore>=2){
            IsLocked = true;
             StartCoroutine(UnlockButtonAfterDelay(1.5f));
-          Unit.CurrentManaScore-=2;
+          Unit.currentManaScore-=2;
           GameObject paper= Instantiate(Paper,T,Quaternion.identity);
           CharacterManager.allyList.Add(paper.gameObject);
             }

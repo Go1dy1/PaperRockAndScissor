@@ -1,33 +1,34 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+
 public class Unit : MonoBehaviour
 {
- [SerializeField] TMP_Text CollectedMana;
- private float ScoreSeconds = 3f;
+    [SerializeField] private TMP_Text collectedManaText;
+    private const int maxManaScore = 10;
+    internal static int currentManaScore = 1;
+    private float scoreSeconds = 3f;
 
- static internal int CurrentManaScore =1;  
- private const int MaxScore = 10;
- private IEnumerator Start() {
-    yield return StartCoroutine(ManaScore());;
-}
-void Awake()
-{
-    
-}
-
-    private IEnumerator ManaScore() {
-        while(true){ 
-        if(CurrentManaScore<MaxScore){
-            CurrentManaScore =CurrentManaScore+1;
-        }
-        yield return new WaitForSeconds(ScoreSeconds);
-        }
-    }
-    void Update()
+    private IEnumerator Start()
     {
-        CollectedMana.text= CurrentManaScore.ToString();
+        yield return StartCoroutine(ManaScore());
     }
 
+    private IEnumerator ManaScore()
+    {
+        while (true)
+        {
+            if (currentManaScore < maxManaScore)
+            {
+                currentManaScore++;
+            }
+            yield return new WaitForSeconds(scoreSeconds);
+        }
+    }
+
+    private void Update()
+    {
+        collectedManaText.text = currentManaScore.ToString();
+    }
 }
+

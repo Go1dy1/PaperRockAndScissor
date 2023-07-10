@@ -1,46 +1,43 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] internal GameObject Menu,Lose, Win, Tie;
-    public float timeStart = 5f;
-    [SerializeField] TMP_Text TimerText;
-    const float lowTime = 0; 
+    [SerializeField] private GameObject menu, lose, win, tie;
+    [SerializeField] private TMP_Text timerText;
+    private float timeStart = 90f;
+    private const float lowTime = 0;
     public PassADS ad;
-    private bool ShowAdds =false;
+    private bool showAds = false;
+
     void Start()
     {
-        TimerText.text = timeStart.ToString();
+        timerText.text = timeStart.ToString();
     }
 
-   
     void Update()
     {
+        timeStart -= Time.deltaTime;
+        timerText.text = Mathf.Round(timeStart).ToString();
 
+        if (timeStart <= lowTime || EnemyCrush.HealPoint <= lowTime || TowerManager.healPointTower <= lowTime)
+        {
+            timeStart = lowTime;
+            menu.SetActive(true);
 
-        timeStart-=  Time.deltaTime;
-        TimerText.text  = Mathf.Round(timeStart).ToString();
+            if (EnemyCrush.HealPoint > TowerManager.healPointTower)
+                lose.SetActive(true);
+            else if (EnemyCrush.HealPoint < TowerManager.healPointTower)
+                win.SetActive(true);
+            else
+                tie.SetActive(true);
 
-        if(timeStart<=lowTime||EnemyCrush.HealPoint<=lowTime||TowerManager.HealPoint<=lowTime){
-            
-           timeStart= lowTime;
-            Menu.SetActive(true);
-
-            if(EnemyCrush.HealPoint> TowerManager.HealPoint)Lose.SetActive(true);
-            else if(EnemyCrush.HealPoint< TowerManager.HealPoint)Win.SetActive(true);
-            else Tie.SetActive(true);
-            if(!ShowAdds){
-                ShowAdds= true;    
+            if (!showAds)
+            {
+                showAds = true;
                 ad.ShowAd();
-
-                }
-            
-
+            }
         }
     }
 }
+

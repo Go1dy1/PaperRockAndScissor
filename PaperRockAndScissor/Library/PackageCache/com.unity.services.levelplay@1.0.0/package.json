@@ -1,0 +1,26 @@
+{
+  "name": "com.unity.services.levelplay",
+  "displayName": "Ads Mediation",
+  "version": "1.0.0",
+  "unity": "2020.3",
+  "description": "Note: Starting December 2022, we recommend that you use the Ads Mediation package instead of the Advertisement with Mediation and Advertisement Legacy packages.\n\nUse the Ads Mediation package to monetize your app with Unity LevelPlay, a monetization tool that allows multiple ad networks to compete for your impressions. This package includes a suite of growth solutions, such as in-app bidding, waterfall ad strategies, A/B testing, and cross promotion.\n\nTo get started with Ads Mediation, select Install, and then follow the import process. For more information on how to use this package, see the Unity LevelPlay documentation: https://developers.is.com/monetization/\n\nSupported platforms:\n▪ Android\n▪ iOS",
+  "documentationUrl": "https://developers.is.com/monetization/",
+  "_upm": {
+    "supportedPlatforms": [
+      "Android",
+      "iOS"
+    ]
+  },
+  "dependencies": {},
+  "relatedPackages": {
+    "com.unity.services.levelplay.tests": "1.0.0"
+  },
+  "upmCi": {
+    "footprint": "6debb56ef6dabe0abcd0f3af06e1040c5ca6d833"
+  },
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git",
+    "type": "git",
+    "revision": "b7cfbb6443c5b1e3416d19da84acdb19aec0c2ad"
+  }
+}

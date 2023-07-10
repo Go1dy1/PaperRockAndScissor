@@ -7,40 +7,41 @@ using TMPro;
 
 public class TowerManager : MonoBehaviour
 {
-[SerializeField] TMP_Text CollectedHeal;
-[SerializeField] GameObject MyCastle;  
-static internal int HealPoint;
-private Vector3 myfront = new Vector3(0.04f,0f,-19.298f);
-private Vector3 myback = new Vector3(0f,0f,-19.66f);
-internal Transform AllyPos;
-private const int zero = 0; 
-internal static TowerManager Ally;
-void Start()
-    {
-        Ally= this;
-        AllyPos = gameObject.transform;
-      
+  [SerializeField] private TMP_Text collectedHealText;
+  [SerializeField] private GameObject myCastleObject;  
+  static internal int healPointTower = 5;
+  private Vector3 myFrontPosition = new Vector3(0.04f,0f,-19.298f);
+  private Vector3 myBackPosition = new Vector3(0f,0f,-19.66f);
+  public Transform AllyPos{get;private set;} 
+  private const int zero = 0; 
+  internal static TowerManager Ally;
 
-    }
-void Awake()
-{
-  HealPoint= 5;
-}
-void OnTriggerEnter(Collider other)
-{
-  if(other.tag == "Enemy"){
-    MyCastle.transform.DOMove(myfront,0f,false );
-    MyCastle.transform.DOMove(myback,1f,false);
-    CharacterManager.enemyList.Remove(other.gameObject);
-    Destroy(other.gameObject);
-      
-    if(HealPoint>zero)HealPoint= HealPoint-1;
-    HealManager();
+
+  private void Start()
+  {
+    Ally= this;
+    AllyPos = gameObject.transform;
   }
-}
+  void OnTriggerEnter(Collider other)
+  {
+      if (other.tag == "Enemy")
+      {
+          myCastleObject.transform.DOMove(myFrontPosition, 0f, false);
+          myCastleObject.transform.DOMove(myBackPosition, 1f, false);
+          CharacterManager.enemyList.Remove(other.gameObject);
+          Destroy(other.gameObject);
+        
+          if (healPointTower > 0)
+              healPointTower--;
+        
+          UpdateHealText();
+      }
+  }
 
-public void HealManager(){
-  CollectedHeal.text= HealPoint.ToString();
-}
+  public void UpdateHealText()
+  {
+      collectedHealText.text = healPointTower.ToString();
+  }
+
 
 }

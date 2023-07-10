@@ -1,0 +1,580 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1688152038897184, "dur": 1121876, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1688152038897397, "dur": 1702, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1688152038899100, "dur": 32038, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1688152038931213, "dur": 635852, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1688152039567067, "dur": 438627, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1688152040005696, "dur": 13363, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1688152040019318, "dur": 8, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1688152039236050, "dur": 275955, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1688152039236931, "dur": 156436, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1688152039498889, "dur": 3518, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1688152039502410, "dur": 9591, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1688152039502934, "dur": 8565, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1688152039515912, "dur": 1125, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1688152039514771, "dur": 2285, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1688152040019398, "dur": 2515, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1688152039602999, "dur":2483, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039605492, "dur":132, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1688152039605659, "dur":25, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1688152039605685, "dur":335, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1688152039606043, "dur":510, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039606553, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988638, "dur":175, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988813, "dur":34, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988847, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988849, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988855, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988858, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988864, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988866, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988870, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988871, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988876, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988878, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988881, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988883, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988887, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988889, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988893, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988895, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988898, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988900, "dur":3, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988904, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988905, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988909, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988911, "dur":4, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988915, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988930, "dur":1, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039988951, "dur":1952, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1688152039606123, "dur":436, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688152039606561, "dur":2123, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688152039608691, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1688152039608695, "dur":22, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688152039608720, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1688152039608724, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688152039609399, "dur":1912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1688152039611313, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1688152039611326, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688152039611653, "dur":14689, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1688152039626357, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1688152039626383, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688152039626388, "dur":1882, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":1, "ts":1688152039628278, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1688152039628288, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688152039628291, "dur":97023, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":1, "ts":1688152039725331, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1688152039725348, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1688152039725353, "dur":203093, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":1, "ts":1688152039928466, "dur":60175, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039606154, "dur":416, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039606570, "dur":2120, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039608692, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1688152039608722, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039615566, "dur":11089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":2, "ts":1688152039626667, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1688152039626681, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039626687, "dur":100126, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":2, "ts":1688152039726826, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor.exe" }}
+,{ "pid":12345, "tid":2, "ts":1688152039726843, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039726846, "dur":1445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor.exe" }}
+,{ "pid":12345, "tid":2, "ts":1688152039728303, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039728337, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039728379, "dur":2535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039730928, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039730969, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039730974, "dur":1612, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039732608, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039732626, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039732631, "dur":3796, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039736441, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039736458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039736464, "dur":2693, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039739170, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039739190, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039739194, "dur":2678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039741886, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039741920, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039741925, "dur":2384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039744354, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039744370, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039744375, "dur":2870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039747260, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039747276, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039747300, "dur":2186, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039749495, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039749516, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039749520, "dur":3269, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039752802, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039752816, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039752821, "dur":2912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039755746, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039755761, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039755766, "dur":1996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039757771, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039757782, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039757785, "dur":2158, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039759955, "dur":85986, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039845945, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039845953, "dur":1679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039847746, "dur":1375, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039849125, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039849133, "dur":1327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039850472, "dur":31956, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039882431, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039882436, "dur":2902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039885353, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039885369, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039885374, "dur":5377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039890765, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039890783, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039890789, "dur":1939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039892743, "dur":94883, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039987628, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1688152039987634, "dur":961, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":2, "ts":1688152039988606, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":2, "ts":1688152039988608, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039606149, "dur":415, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039606564, "dur":2122, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039608692, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1688152039608770, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039623783, "dur":105114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":3, "ts":1688152039728912, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039728946, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039728951, "dur":2914, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039731877, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039731896, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039731901, "dur":3900, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039735814, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039735830, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039735835, "dur":3042, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039738888, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039738899, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039738902, "dur":2980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039741899, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039741920, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039741926, "dur":2912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039744850, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039744869, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039744874, "dur":2819, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039747708, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039747724, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039747729, "dur":2892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039750634, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039750649, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039750654, "dur":2985, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039753653, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039753670, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039753675, "dur":2760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039756457, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039756474, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039756479, "dur":2500, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039758992, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039759007, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039759012, "dur":2001, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039761026, "dur":81072, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039842104, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039842114, "dur":1274, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039843402, "dur":688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039844123, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039844131, "dur":1136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039845280, "dur":64217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039909501, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039909508, "dur":2359, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":3, "ts":1688152039911880, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1688152039911895, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1688152039911899, "dur":6402, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1688152039918318, "dur":70342, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039606177, "dur":398, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039606575, "dur":2116, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039608691, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1688152039608752, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039618128, "dur":109939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1688152039728082, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039728106, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039728326, "dur":1372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039729710, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039729723, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039730278, "dur":1801, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039732090, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039732141, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039732146, "dur":3731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039735891, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039735905, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039735910, "dur":2570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039738494, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039738507, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039738512, "dur":3758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039742284, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039742299, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039742304, "dur":2725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039745042, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039745057, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039745062, "dur":2950, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039748032, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039748048, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039748054, "dur":3095, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039751162, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039751177, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039751183, "dur":2432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039753630, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039753645, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039753650, "dur":2799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039756463, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039756480, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039756485, "dur":2438, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039758937, "dur":59663, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.Advertisements.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039818605, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039818616, "dur":1644, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.Advertisements.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039820282, "dur":26170, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039846456, "dur":4, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039846466, "dur":1643, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039848120, "dur":1286, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039849410, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039849416, "dur":2025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039851453, "dur":597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039852054, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039852060, "dur":916, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039852988, "dur":32987, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039885979, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039885986, "dur":3718, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039889720, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039889736, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039889741, "dur":1790, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039891543, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039891582, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039891587, "dur":5873, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":4, "ts":1688152039897475, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":4, "ts":1688152039897691, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039898260, "dur":1207, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":4, "ts":1688152039899481, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1688152039899497, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039899502, "dur":3679, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":4, "ts":1688152039903196, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1688152039903209, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039903214, "dur":6049, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":4, "ts":1688152039909276, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1688152039909290, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039909295, "dur":4907, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/resources.assets" }}
+,{ "pid":12345, "tid":4, "ts":1688152039914214, "dur":146, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1688152039914363, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1688152039914367, "dur":3892, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1688152039918274, "dur":70357, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039606205, "dur":375, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039606580, "dur":2108, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039608692, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1688152039608766, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039623529, "dur":105224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1688152039728766, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039728784, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039728789, "dur":2700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039731502, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039731522, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039731527, "dur":2970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039734518, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039734535, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039734540, "dur":3462, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039738014, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039738030, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039738035, "dur":1781, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039739830, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039739850, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039739869, "dur":3395, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039743277, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039743291, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039743296, "dur":1745, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039745055, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039745070, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039745075, "dur":2631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039747722, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039747738, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039747743, "dur":2492, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039750250, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039750265, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039750271, "dur":3075, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039753369, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039753386, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039753390, "dur":2347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039755749, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039755763, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039755766, "dur":2265, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039758041, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039758051, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039758054, "dur":2070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039760135, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039760150, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039760157, "dur":1219, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039761388, "dur":224726, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039986118, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1688152039986126, "dur":1283, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":5, "ts":1688152039987424, "dur":1212, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039606231, "dur":354, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039606585, "dur":2100, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039608692, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":6, "ts":1688152039608762, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039620930, "dur":108286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":6, "ts":1688152039729231, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039729249, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039729253, "dur":3315, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039732581, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039732603, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039732628, "dur":4360, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039737004, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039737024, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039737029, "dur":2639, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039739680, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039739696, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039739701, "dur":3469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039743183, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039743198, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039743203, "dur":2970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039746186, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039746199, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039746204, "dur":2629, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039748846, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039748862, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039748867, "dur":3327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039752207, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039752220, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039752225, "dur":2129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039754365, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039754378, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039754383, "dur":2656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039757052, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039757068, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039757073, "dur":2466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039759557, "dur":47762, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039807326, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039807336, "dur":1816, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039809168, "dur":696, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039809867, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039809874, "dur":964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039810851, "dur":60707, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039871562, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039871571, "dur":1483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039873070, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039873088, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039873094, "dur":1165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039874271, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039874285, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039874290, "dur":2407, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039876710, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039876724, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039876729, "dur":5068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039881810, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039881826, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039881831, "dur":1593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039883439, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039883457, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039883462, "dur":3769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039887245, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039887260, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039887265, "dur":5277, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039892556, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/DOTween.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039892570, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039892575, "dur":5091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/DOTween.dll" }}
+,{ "pid":12345, "tid":6, "ts":1688152039897680, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1688152039897696, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039897763, "dur":1266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":6, "ts":1688152039899042, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1688152039899058, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039899062, "dur":6329, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1688152039905405, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1688152039905589, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039905658, "dur":5357, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":6, "ts":1688152039911031, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1688152039911048, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039911054, "dur":3073, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1688152039914142, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1688152039914157, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1688152039914162, "dur":4667, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":6, "ts":1688152039918843, "dur":69808, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688152039606251, "dur":338, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688152039606589, "dur":2096, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688152039608692, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1688152039608725, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688152039612521, "dur":13978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1688152039626514, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1688152039626532, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688152039626537, "dur":100547, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1688152039727097, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":7, "ts":1688152039727110, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1688152039727568, "dur":193286, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":7, "ts":1688152039920872, "dur":67775, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039606275, "dur":319, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039606594, "dur":2102, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039608697, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1688152039608728, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039617913, "dur":109580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1688152039727510, "dur":104598, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Zenject.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039832115, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039832126, "dur":1941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Zenject.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039834085, "dur":40378, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039874466, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039874472, "dur":7704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039882207, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039882227, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039882233, "dur":2205, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039884454, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039884475, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039884482, "dur":3827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039888322, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039888339, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039888346, "dur":4377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039892744, "dur":61915, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039954664, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1688152039954673, "dur":1045, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":8, "ts":1688152039955729, "dur":32910, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1688152039606300, "dur":299, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1688152039606599, "dur":2088, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1688152039608693, "dur":25, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1688152039608722, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1688152039609791, "dur":14585, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1688152039624385, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1688152039624400, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1688152039624449, "dur":9941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":9, "ts":1688152039634407, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1688152039634429, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1688152039634494, "dur":274367, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1688152039908881, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1688152039908904, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1688152039908909, "dur":4680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":9, "ts":1688152039913608, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":9, "ts":1688152039913625, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1688152039913630, "dur":2488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":9, "ts":1688152039916132, "dur":72500, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039606320, "dur":283, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039606603, "dur":2089, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039608692, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1688152039608723, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039612704, "dur":14024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":10, "ts":1688152039626737, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1688152039626749, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039626753, "dur":1552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":10, "ts":1688152039628314, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":10, "ts":1688152039628328, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039628599, "dur":12241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":10, "ts":1688152039640853, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":10, "ts":1688152039640871, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039640875, "dur":221281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":10, "ts":1688152039862177, "dur":1055, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":10, "ts":1688152039863236, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039863243, "dur":1540, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":10, "ts":1688152039864795, "dur":57102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.AI.Navigation.Samples.dll" }}
+,{ "pid":12345, "tid":10, "ts":1688152039921902, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1688152039921911, "dur":1113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.AI.Navigation.Samples.dll" }}
+,{ "pid":12345, "tid":10, "ts":1688152039923034, "dur":65611, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039606340, "dur":267, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039606607, "dur":2086, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039608694, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1688152039608757, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039620586, "dur":107233, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1688152039727838, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Zenject-usage.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039727862, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039729312, "dur":5169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Zenject-usage.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039734496, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039734513, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039734518, "dur":2931, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039737498, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039737528, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039737533, "dur":3599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039741146, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039741162, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039741167, "dur":2651, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039743831, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039743846, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039743852, "dur":2488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039746352, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039746367, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039746372, "dur":2107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039748488, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039748497, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039748501, "dur":2827, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039751340, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039751355, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039751360, "dur":2497, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039753870, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039753886, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039753891, "dur":3641, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039757547, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039757563, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039757568, "dur":2221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039759800, "dur":101523, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039861331, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039861344, "dur":3828, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039865186, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039865205, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039865211, "dur":2397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039867624, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039867641, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039867648, "dur":5600, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039873261, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039873298, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039873303, "dur":3055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039876372, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039876388, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039876393, "dur":4843, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039881254, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039881271, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039881279, "dur":1582, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039882872, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039882886, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039882890, "dur":4022, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039886927, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039886959, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039886974, "dur":3769, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039890757, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039890774, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039890779, "dur":1345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039892136, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039892150, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039892155, "dur":6564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":11, "ts":1688152039898735, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":11, "ts":1688152039898760, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039898765, "dur":3144, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":11, "ts":1688152039901923, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1688152039901939, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039901943, "dur":5107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":11, "ts":1688152039907064, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/resources.resource" }}
+,{ "pid":12345, "tid":11, "ts":1688152039907079, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039907084, "dur":4422, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/resources.resource" }}
+,{ "pid":12345, "tid":11, "ts":1688152039911521, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/level1" }}
+,{ "pid":12345, "tid":11, "ts":1688152039911539, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1688152039911663, "dur":4595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/level1" }}
+,{ "pid":12345, "tid":11, "ts":1688152039916271, "dur":72383, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039606360, "dur":252, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039606612, "dur":2077, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039608691, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1688152039608724, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039615178, "dur":113176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1688152039728372, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1688152039728393, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039728397, "dur":2912, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1688152039731320, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1688152039731334, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039731338, "dur":3611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1688152039734961, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1688152039734975, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039734981, "dur":2944, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1688152039737937, "dur":159121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":12, "ts":1688152039897064, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039897073, "dur":3215, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":12, "ts":1688152039900313, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":12, "ts":1688152039900328, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039900332, "dur":6175, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":12, "ts":1688152039906520, "dur":835, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":12, "ts":1688152039907359, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039907365, "dur":4870, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":12, "ts":1688152039912248, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/level0" }}
+,{ "pid":12345, "tid":12, "ts":1688152039912261, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1688152039912265, "dur":3973, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/artni/Desktop/RockPaper&Scissors/PaperRockAndScissor_Data/level0" }}
+,{ "pid":12345, "tid":12, "ts":1688152039916258, "dur":72375, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1688152039991847, "dur":1373, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1688152040021946, "dur": 528, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1688152040019307, "dur": 3183, "ph": "X", "name": "Write chrome-trace events", "args": {} },
