@@ -2570,6 +2570,17 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 142097116295180067, guid: 9e76e5193c4966c42a1088f204b70e9a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9e76e5193c4966c42a1088f204b70e9a, type: 3}
+--- !u!114 &1226798159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7349432588974350983, guid: 5aeeb9c98d2e61646b0a1ad0b4ca02ba, type: 3}
+  m_PrefabInstance: {fileID: 7349432589705001725}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1295136304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 441090, guid: ccbe3c5efe0bbed4bbe4b8651efb2db8, type: 3}
@@ -4631,6 +4642,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 464554582469298378, guid: 9e76e5193c4966c42a1088f204b70e9a, type: 3}
   m_PrefabInstance: {fileID: 564776552}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1954843219 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7349432590337025146, guid: 5aeeb9c98d2e61646b0a1ad0b4ca02ba, type: 3}
+  m_PrefabInstance: {fileID: 7349432589705001725}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1959472795
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,8 +5350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1957b656de9699e4cbb36635dd590951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedHealText: {fileID: 0}
-  myCastleObject: {fileID: 0}
+  collectedHealText: {fileID: 1226798159}
+  myCastleObject: {fileID: 1658951801189567}
 --- !u!1001 &1562551146804755229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5569,6 +5591,10 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 7349432588895608590, guid: 5aeeb9c98d2e61646b0a1ad0b4ca02ba, type: 3}
+      propertyPath: collectedManaText
+      value: 
+      objectReference: {fileID: 1954843219}
     - target: {fileID: 7349432589443929160, guid: 5aeeb9c98d2e61646b0a1ad0b4ca02ba, type: 3}
       propertyPath: m_Camera
       value: 

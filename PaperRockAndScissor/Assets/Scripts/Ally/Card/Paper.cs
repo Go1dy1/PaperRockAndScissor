@@ -1,14 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 using UnityEngine.AI;
-
 public class Paper : Card
 {
-
 private void Awake() {
-     HealPoint= 8; Damage = 4;speed=3.5f; ModifyDamage= 2.4f;
+    HealPoint= 8;
+    Damage = 4;
+    speed=3.5f; 
+    ModifyDamage= 2.4f;
 }
 private IEnumerator Start()
 {
@@ -17,12 +16,9 @@ private IEnumerator Start()
     agent= GetComponent<NavMeshAgent>(); 
 }
 void Update()
-    {
-        
-       TempMethod(agent,Tower);
-
-
-    }   
+{
+    TempMethod(agent,Tower);
+}   
 
 }
 

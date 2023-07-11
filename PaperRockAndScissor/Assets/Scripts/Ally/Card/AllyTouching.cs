@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class AllyTouching : MonoBehaviour
 {
 float MinDist = Mathf.Infinity;
-   [SerializeField] NavMeshAgent agent;
+   [SerializeField] private NavMeshAgent agent;
    internal GameObject currentPoint ;
     void Update()
     {
@@ -16,16 +16,23 @@ float MinDist = Mathf.Infinity;
           
             
 
-        float tempDistanceBetObj= Vector3.Distance(transform.position,Enemy.transform.position);
+            float tempDistanceBetObj= Vector3.Distance(transform.position,Enemy.transform.position);
 
-        if(Enemy.activeSelf &&tempDistanceBetObj<MinDist){
-                    currentPoint = Enemy;
-                    MinDist = tempDistanceBetObj;
+            if(Enemy.activeSelf &&tempDistanceBetObj<MinDist){
+                        currentPoint = Enemy;
+                        MinDist = tempDistanceBetObj;
+                }
+
+            if(currentPoint != null && MinDist < CharacterManager.MinDistance)
+            {
+                agent.SetDestination(currentPoint.transform.position);
+            }
+            else if(currentPoint != null&&!currentPoint.activeSelf)
+            {
+                currentPoint =null;
             }
 
-        if(currentPoint != null && MinDist < CharacterManager.MinDistance){
-            agent.SetDestination(currentPoint.transform.position);
-        }
+            
         }
         }
 
