@@ -446,7 +446,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7349432588563628375}
-  - component: {fileID: 7349432588563628374}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -477,25 +476,6 @@ RectTransform:
   m_AnchoredPosition: {x: -82, y: 49.5}
   m_SizeDelta: {x: 404.71, y: 86.842}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7349432588563628374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7349432588563628372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d99824dbd7ab448bbd8f651c810fd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _camera: {fileID: 0}
-  BStone: {fileID: 7349432589109425163}
-  BScissors: {fileID: 7349432589679753789}
-  BPaper: {fileID: 7349432589701355227}
-  Stone: {fileID: 8908564322345977591, guid: 6cf3a4f0cfa41dd4c88ab3f84b1e4c54, type: 3}
-  Scissors: {fileID: 4823861802570216590, guid: 81ab7db489685484499ca47e8c9be6da, type: 3}
-  Paper: {fileID: 1012193302876043659, guid: 9544034515f26964e80e1f2c03f101dc, type: 3}
 --- !u!1 &7349432588572603613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e25426f834d5d2458a9dea8d4748594, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollectedMana: {fileID: 7349432590337025146}
+  collectedManaText: {fileID: 0}
 --- !u!1 &7349432588974350981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2620,12 +2600,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a3208f859fe2124aaa9e87599832180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Menu: {fileID: 7349432588724101947}
-  Lose: {fileID: 7349432588249871617}
-  Win: {fileID: 7349432589313503364}
-  Tie: {fileID: 7349432589468543170}
-  timeStart: 90
-  TimerText: {fileID: 7349432589432457213}
+  menu: {fileID: 0}
+  lose: {fileID: 0}
+  win: {fileID: 0}
+  tie: {fileID: 0}
+  timerText: {fileID: 0}
   ad: {fileID: 0}
 --- !u!1 &7349432589948449531
 GameObject:
