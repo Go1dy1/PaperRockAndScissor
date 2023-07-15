@@ -16,7 +16,7 @@ public float ENDamage ;
 public float ModifyDamage;
 public Transform Tower;
 public float Speed;
-
+private int ZeroHP = 0;
 [SerializeField] internal NavMeshAgent agent;
  private void Awake(){ 
     agent = GetComponent<NavMeshAgent>();
@@ -42,39 +42,60 @@ private void OnTriggerEnter(Collider other) {
     EnemyCard enemyCard= gameObject.GetComponent<EnemyCard>();
     Card AllyCard= other.gameObject.GetComponent<Card>();
 
-  if(enemyCard.HealPoint<=0f){
-            Instantiate(Puff,gameObject.transform.position,Quaternion.identity);
-            Instantiate(Death,gameObject.transform.position,Quaternion.identity);
-            CharacterManager.enemyList.Remove(enemyCard.gameObject);
-            Destroy(enemyCard.gameObject);
-        }
-        if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Stone && enemyCard.ENtypeOfCard== CardType.Scissors){ 
-        HealPoint= ModAttack(AllyCard.Damage,HealPoint,AllyCard.ModifyDamage);
-        ComeBack();
-        }
-        else if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Stone){
-        HealPoint= Attack(AllyCard.Damage,HealPoint); 
-        ComeBack();
-        }
+  if(enemyCard.HealPoint<=ZeroHP)
+  {
+    SpawnEffect();
+    CharacterManager.enemyList.Remove(enemyCard.gameObject);
+    Destroy(enemyCard.gameObject);
+  }
 
-        if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Paper && enemyCard.ENtypeOfCard== CardType.Stone){
-        HealPoint= ModAttack(AllyCard.Damage,HealPoint,AllyCard.ModifyDamage);
-        ComeBack();
+    if(other.tag=="Ally")
+    { 
+
+        if(AllyCard.typeOfCard== CardType.Stone)
+        { 
+            if(enemyCard.ENtypeOfCard == CardType.Scissors)
+            {
+                HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,enemyCard.ModifyDamage);
+            }
+            else
+            {
+                HealPoint = Attack(enemyCard.ENDamage, HealPoint);
+            }
         }
-        else if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Paper){
-        HealPoint= Attack(AllyCard.Damage,HealPoint);
-        ComeBack();
+        else if(AllyCard.typeOfCard== CardType.Paper)
+        {
+            if(enemyCard.ENtypeOfCard == CardType.Stone)
+            {
+                HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,enemyCard.ModifyDamage);
+            }
+            else
+            {
+                HealPoint = Attack(enemyCard.ENDamage, HealPoint);
+            }
         }
+        else if (AllyCard.typeOfCard== CardType.Scissors)
+        {
+            if (enemyCard.ENtypeOfCard == CardType.Paper)
+            {
+                HealPoint = ModAttack(enemyCard.ENDamage, HealPoint, enemyCard.ModifyDamage);
+            }
+            else
+            {
+                HealPoint = Attack(enemyCard.ENDamage, HealPoint);
+            }
         
-        if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Scissors && enemyCard.ENtypeOfCard== CardType.Paper){
-        HealPoint= ModAttack(AllyCard.Damage,HealPoint,AllyCard.ModifyDamage);
-        ComeBack(); 
         }
-        else if(other.tag=="Ally" && AllyCard.typeOfCard == CardType.Scissors){
-        HealPoint= Attack(AllyCard.Damage,HealPoint);   
         ComeBack();
         }
- }
+}
+
+public void SpawnEffect()
+{   
+    Instantiate(Puff,gameObject.transform.position,Quaternion.identity);
+    Instantiate(Death,gameObject.transform.position,Quaternion.identity);
+
+}
 public float Attack(float damage, float health){
         health= health- damage;
         return health;

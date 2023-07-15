@@ -1,6 +1,3 @@
-using System.Diagnostics;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
@@ -32,7 +29,7 @@ public class TowerManager : MonoBehaviour
           Destroy(other.gameObject);
         
           if (healPointTower > 0)
-              healPointTower--;
+            healPointTower--;
         
           UpdateHealText();
       }

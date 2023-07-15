@@ -6,7 +6,9 @@ public class EnemyStone : EnemyCard
 {
 
 private void Awake() {
-   HealPoint= 12; ENDamage = 3;  ModifyDamage= 2f;
+    HealPoint= 12;
+    ENDamage = 3;
+    ModifyDamage= 3f;
 }
 private IEnumerator Start()
 {

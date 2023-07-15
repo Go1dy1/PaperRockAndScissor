@@ -8,7 +8,7 @@ private void Awake()
     HealPoint= 10;
     Damage = 3;
     speed=2;
-    ModifyDamage= 2f;  
+    ModifyDamage= 3f;  
 }
 private IEnumerator Start()
 {
