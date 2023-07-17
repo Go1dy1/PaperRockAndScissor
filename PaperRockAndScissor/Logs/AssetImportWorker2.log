@@ -1,0 +1,829 @@
+Using pre-set license
+Built from '2021.3/release' branch; Version is '2021.3.17f1 (3e8111cac19d) revision 4096273'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 32654 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+E:\Unity_HUB\2021.3.17f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/PaperRockAndScissor/PaperRockAndScissor
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+56121
+Successfully changed project path to: D:/PaperRockAndScissor/PaperRockAndScissor
+D:/PaperRockAndScissor/PaperRockAndScissor
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23776] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1111296425 [EditorId] 1111296425 [Version] 1048832 [Id] WindowsEditor(7,Boris) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23776] Host "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1111296425 [EditorId] 1111296425 [Version] 1048832 [Id] WindowsEditor(7,Boris) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 137.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.17f1 (3e8111cac19d)
+[Subsystems] Discovering subsystems at path E:/Unity_HUB/2021.3.17f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/PaperRockAndScissor/PaperRockAndScissor/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5968 MB
+    Driver:   31.0.15.3179
+Initialize mono
+Mono path[0] = 'E:/Unity_HUB/2021.3.17f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Unity_HUB/2021.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'E:/Unity_HUB/2021.3.17f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56772
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Unity_HUB/2021.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: E:/Unity_HUB/2021.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: E:/Unity_HUB/2021.3.17f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: E:/Unity_HUB/2021.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002749 seconds.
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 210 ms
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 93.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.807 seconds
+Domain Reload Profiling:
+	ReloadAssembly (807ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (631ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (97ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (473ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (281ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (93ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (66ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009167 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\PaperRockAndScissor\PaperRockAndScissor\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\PaperRockAndScissor\PaperRockAndScissor\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.968 seconds
+Domain Reload Profiling:
+	ReloadAssembly (969ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (790ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (297ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (324ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4250 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 53 unused Assets / (115.4 KB). Loaded Objects now: 4715.
+Memory consumption went from 156.1 MB to 156.0 MB.
+Total: 2.929700 ms (FindLiveObjects: 0.243000 ms CreateObjectMapping: 0.096200 ms MarkObjects: 2.479800 ms  DeleteObjects: 0.110000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 75011.300275 seconds.
+  path: Assets/3D Prefabs/Enemy/Paper/Paper (enemy).prefab
+  artifactKey: Guid(5d3e4340c04fe0f4ca13462cb45753c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Enemy/Paper/Paper (enemy).prefab using Guid(5d3e4340c04fe0f4ca13462cb45753c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3dd8ccacc9cb24f3588e57fc9d91017') in 0.129289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.873919 seconds.
+  path: Assets/3D Prefabs/Enemy/Stone/Stone (enemy).prefab
+  artifactKey: Guid(5320eb5cb7ca82b43b3391b7d7c74ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Enemy/Stone/Stone (enemy).prefab using Guid(5320eb5cb7ca82b43b3391b7d7c74ef6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c56b0d9ed8dcc588d26fd5a08aa4d848') in 0.017530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.925786 seconds.
+  path: Assets/3D Prefabs/Ally/Paper.prefab
+  artifactKey: Guid(9544034515f26964e80e1f2c03f101dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Ally/Paper.prefab using Guid(9544034515f26964e80e1f2c03f101dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30f3e4fa166a12a68a8c242fd3862a70') in 0.076485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.036475 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass
+  artifactKey: Guid(f84fdedeee5d24d448a0d6f01cdff3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass using Guid(f84fdedeee5d24d448a0d6f01cdff3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b69e2b8e5bae5b202593b670e69e1e9') in 0.009139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.777544 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes
+  artifactKey: Guid(c35e13fa5f38cb84c94989b06ae3aad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes using Guid(c35e13fa5f38cb84c94989b06ae3aad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cdd6b76e7c5706db73d83c6b6ccee1') in 0.009486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.391654 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs
+  artifactKey: Guid(a6be8cac79645f241b6aee986e0d4b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs using Guid(a6be8cac79645f241b6aee986e0d4b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c823c7e95a4434b7b4869232fb7bd24') in 0.009173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.059152 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Background1.prefab
+  artifactKey: Guid(593794403c8dab2449e17db5068b1251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Background1.prefab using Guid(593794403c8dab2449e17db5068b1251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd98b4cbcb33139250bc1117ecee975a1') in 0.019431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Bush 2.prefab
+  artifactKey: Guid(9c90430fdda32824ab31504372faa134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Bush 2.prefab using Guid(9c90430fdda32824ab31504372faa134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbfb9752fd26d991b78a4ca3c76997d0') in 0.017815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Hedge 1.prefab
+  artifactKey: Guid(e1ad4dab8b77e5e4cb90b7caec4532ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Hedge 1.prefab using Guid(e1ad4dab8b77e5e4cb90b7caec4532ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '649c0b3790c78b74670613809e4910d2') in 0.015549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 3.prefab
+  artifactKey: Guid(dd8c145e62469574c8988c6d5ce0db70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 3.prefab using Guid(dd8c145e62469574c8988c6d5ce0db70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482ad79bb835abe653ee5f47e6e7ab56') in 0.016707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 6.prefab
+  artifactKey: Guid(ca6eed513414b8b48a37b6c02c2fb480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 6.prefab using Guid(ca6eed513414b8b48a37b6c02c2fb480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67435698aacf61f69bffccc22c2325d5') in 0.014655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Log 1.prefab
+  artifactKey: Guid(4d905b5f2664cf64b9a4c072f1b286f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Log 1.prefab using Guid(4d905b5f2664cf64b9a4c072f1b286f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0b708c395766434ba58b932213bb786') in 0.016807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 9.prefab
+  artifactKey: Guid(6956dbfb44d2389469a0a8d9b83f3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 9.prefab using Guid(6956dbfb44d2389469a0a8d9b83f3bc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92c42c70aff8b33f166e82625026714') in 0.015696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Tree Trunk 2.prefab
+  artifactKey: Guid(5e71f9539db1ae246a25939dafb13650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Tree Trunk 2.prefab using Guid(5e71f9539db1ae246a25939dafb13650) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd115e262c4ec13bdf2e7b35dcfc3f97b') in 0.023278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 5.prefab
+  artifactKey: Guid(4df9e670bb3c36b4b81387e859e93d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Street Tree 5.prefab using Guid(4df9e670bb3c36b4b81387e859e93d4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6ba15c81fbbccceb434c2e22adbc940') in 0.015972 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 5.prefab
+  artifactKey: Guid(35d91982422de864eafebd29f7b4e4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Potted Plant 5.prefab using Guid(35d91982422de864eafebd29f7b4e4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d996565d07eff74603cd4880bd56cd4') in 0.012700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Directional Light.prefab
+  artifactKey: Guid(b495335d998dbd44fb9ff642cf73a7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Directional Light.prefab using Guid(b495335d998dbd44fb9ff642cf73a7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed9046c408555874e51e56a31bb9425') in 0.010210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 11.prefab
+  artifactKey: Guid(0f436f11e5f6a4746ad0ef93dc760583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 11.prefab using Guid(0f436f11e5f6a4746ad0ef93dc760583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '339aa73b9a2d390c7dd3a20bf9dc5db1') in 0.017175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 3.prefab
+  artifactKey: Guid(f2727472b344747408ea8dfb42ce1873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/tree 3.prefab using Guid(f2727472b344747408ea8dfb42ce1873) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b795a56f914878b85844fd9c8d9ad90') in 0.015547 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Main Camera.prefab
+  artifactKey: Guid(c7a759535dc79c345b838a358e072749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Main Camera.prefab using Guid(c7a759535dc79c345b838a358e072749) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05b2171aad70d7de22aff393e5f1ef3') in 0.007965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.142992 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky
+  artifactKey: Guid(b09cbc37eaecd874e87820f839abf369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky using Guid(b09cbc37eaecd874e87820f839abf369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85ac7a4e9b77abcc6fbe3a6d062613e4') in 0.008354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.581037 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack
+  artifactKey: Guid(ce270c1efed548b4da8a373e59421c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack using Guid(ce270c1efed548b4da8a373e59421c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0fbb786e81e6cf609744e974902d75') in 0.008432 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.485953 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs
+  artifactKey: Guid(2d818acaa4627844481af6377833e7ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs using Guid(2d818acaa4627844481af6377833e7ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1995e577308e4c17a173c088c790bedf') in 0.003263 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.129723 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Fire.prefab
+  artifactKey: Guid(f584b4d5076829f4799f9d4dcf6de929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Fire.prefab using Guid(f584b4d5076829f4799f9d4dcf6de929) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81113a5a287873cff90cb0a888296206') in 0.016352 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestBlock02.prefab
+  artifactKey: Guid(3f28852fcfaa2fc4a9956ddd15ba61f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestBlock02.prefab using Guid(3f28852fcfaa2fc4a9956ddd15ba61f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad42ef32c043051b305bd9c6b30423e') in 0.014881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestGrass02.prefab
+  artifactKey: Guid(4c9f6adf60a275840b716082e3482212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestGrass02.prefab using Guid(4c9f6adf60a275840b716082e3482212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c81266770b2f63315fbcdd3adf4855f9') in 0.017606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestGroundDirt.prefab
+  artifactKey: Guid(13f1670c2e187874784d0f667f9057f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestGroundDirt.prefab using Guid(13f1670c2e187874784d0f667f9057f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2808135eefff64308b5d76f865300a7f') in 0.016172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestTreePineShort.prefab
+  artifactKey: Guid(45fe3ec28eac2064d985117cf812ef9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestTreePineShort.prefab using Guid(45fe3ec28eac2064d985117cf812ef9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddbd8803d0e95a5e307bba8228e25d72') in 0.016908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/WaterPixiesSolo.prefab
+  artifactKey: Guid(4d1a1b8720d1bc3438a87ab19ed6593a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/WaterPixiesSolo.prefab using Guid(4d1a1b8720d1bc3438a87ab19ed6593a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bf6252589f76a3803ad2c1c48127789') in 0.014748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/WaterQuadSolo.prefab
+  artifactKey: Guid(45a2654ed7e50b945bbbf5ab0a76e645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/WaterQuadSolo.prefab using Guid(45a2654ed7e50b945bbbf5ab0a76e645) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '871b03b6682ba8cffd58bf5b6f18aa8b') in 0.013994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/RiverQuadSolo.prefab
+  artifactKey: Guid(358cf835a1cf6dc44be7c394778cb1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/RiverQuadSolo.prefab using Guid(358cf835a1cf6dc44be7c394778cb1ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef2222fd0d2b22ccd7acb039f79f0517') in 0.011487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Smoke.prefab
+  artifactKey: Guid(bc42e33df8ad9d14cba646735d12f85d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Smoke.prefab using Guid(bc42e33df8ad9d14cba646735d12f85d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdb0fa6849201da0268aeca1259e1c94') in 0.014813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestTreePineShort2.prefab
+  artifactKey: Guid(7ad57e94574375240b181f8584be81c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestTreePineShort2.prefab using Guid(7ad57e94574375240b181f8584be81c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ec5c262a9074dd3a3ed2872a958d8be') in 0.017730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestTreeAppleTall.prefab
+  artifactKey: Guid(7747cd3716304194fb26aa4e29900eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/ForestTreeAppleTall.prefab using Guid(7747cd3716304194fb26aa4e29900eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32af00ed177f609029fcd5a5bb15694') in 0.026404 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.667048 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Prefabs_Red
+  artifactKey: Guid(39e64b6261cd6584dac8808c9e717191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Prefabs_Red using Guid(39e64b6261cd6584dac8808c9e717191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df9ba797745c64e416f0a9f2654e322') in 0.063257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002773 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Prefabs_Red/ForestBanner_Red.prefab
+  artifactKey: Guid(6ed1034f9492a344ebd1650ecbc20030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Prefabs_Red/ForestBanner_Red.prefab using Guid(6ed1034f9492a344ebd1650ecbc20030) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd61a03841335cc5c8172cfbedd148fb6') in 0.076244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Prefabs_Red/ForestCatapult_Red.prefab
+  artifactKey: Guid(1c646272db9f13f40a1cc8d87b080552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/AurynSky/Forest Pack/Prefabs/Prefabs_Red/ForestCatapult_Red.prefab using Guid(1c646272db9f13f40a1cc8d87b080552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9c0cd4c9d87b252bc5931225d88216') in 0.043576 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 177.864900 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs
+  artifactKey: Guid(79d1a871533b28849beed9b359cca993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs using Guid(79d1a871533b28849beed9b359cca993) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84e48c09976f1d6ae9454c36fec2ce48') in 0.008333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.044237 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type1 01.prefab
+  artifactKey: Guid(75283e9ef15245c4aab126ec6525dd2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type1 01.prefab using Guid(75283e9ef15245c4aab126ec6525dd2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4b150ef9d020ff8cfc4e1c9b4365c78') in 0.007369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type1 03.prefab
+  artifactKey: Guid(85f4229977c9ee247bc4425710c5b0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type1 03.prefab using Guid(85f4229977c9ee247bc4425710c5b0c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af7fefbdfae2be76bbb16f38c218742e') in 0.015400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type2 02.prefab
+  artifactKey: Guid(41dcf1459594f434a8a9bae6ae03eab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type2 02.prefab using Guid(41dcf1459594f434a8a9bae6ae03eab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a33d9253cce77b35a77c14adc83b13eb') in 0.013391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type6 03.prefab
+  artifactKey: Guid(48333a5aa700be24c963813c82ef05d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type6 03.prefab using Guid(48333a5aa700be24c963813c82ef05d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce89040bc3a10391a12c1cea597e4ea2') in 0.011673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type4 01.prefab
+  artifactKey: Guid(e9661e4c2bfea8344a07064944abe034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type4 01.prefab using Guid(e9661e4c2bfea8344a07064944abe034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fc51c2b0750d39c92baeb3868e1dda1') in 0.012686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type3 02.prefab
+  artifactKey: Guid(61b490990a08faa419b1bb6a6708ad09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type3 02.prefab using Guid(61b490990a08faa419b1bb6a6708ad09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bb60d9bd100b71e53a8dbff62407648') in 0.006274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type6 04.prefab
+  artifactKey: Guid(7710ce4a7ee932b4a86742119e3babae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type6 04.prefab using Guid(7710ce4a7ee932b4a86742119e3babae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb6e4c7a48918b816d76e3b2589c374') in 0.013493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type5 03.prefab
+  artifactKey: Guid(1fdb4e5d510354f43bcd6ed13b8eb3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type5 03.prefab using Guid(1fdb4e5d510354f43bcd6ed13b8eb3be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f3c9029357fd2ea9ce817f18c57812') in 0.013024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type4 03.prefab
+  artifactKey: Guid(491333d4c0bd88148813a9dde7fe955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type4 03.prefab using Guid(491333d4c0bd88148813a9dde7fe955b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a679512c8a9a1798816826f2ca40128') in 0.013900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type5 01.prefab
+  artifactKey: Guid(e9cb95ee3e55d914bbd4e5eb2d0a510c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type5 01.prefab using Guid(e9cb95ee3e55d914bbd4e5eb2d0a510c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c91fa32039ea5867a480f5777bfb269c') in 0.007499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type6 01.prefab
+  artifactKey: Guid(78a4b58c8edc1884e932497bbb0da899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type6 01.prefab using Guid(78a4b58c8edc1884e932497bbb0da899) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6a49366b36b460636d354882d4c777') in 0.007200 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type2 03.prefab
+  artifactKey: Guid(17e340ab531e7474d98ac9e8aa98ff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefabs/Rock Type2 03.prefab using Guid(17e340ab531e7474d98ac9e8aa98ff93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53f459b5d9b57e311bfd71d1b8f0eba3') in 0.015020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 189.706403 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefab
+  artifactKey: Guid(0b1668c13a8c59f4694aedb1baadce18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Prefab using Guid(0b1668c13a8c59f4694aedb1baadce18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f963e092f342867fcbc6d516a6bd1e') in 0.009087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.009926 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Textures/Colorsheet Rock Green.png
+  artifactKey: Guid(261daef070ff0384db9965e419ec9f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Textures/Colorsheet Rock Green.png using Guid(261daef070ff0384db9965e419ec9f35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ecb6ee82e8cd961eae76c1ee680861e') in 0.041952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Textures/Colorsheet Rock Sand.png
+  artifactKey: Guid(dd4ddf430e155f54cb27867f5a466c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Textures/Colorsheet Rock Sand.png using Guid(dd4ddf430e155f54cb27867f5a466c16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ca5e2ffbca3fd82ba663fd7e5572ee') in 0.011327 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Textures/Colorsheet Rock Orange.png
+  artifactKey: Guid(373999fd26f1a054dab3611997559ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Textures/Colorsheet Rock Orange.png using Guid(373999fd26f1a054dab3611997559ef1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e114fd224e80cbf262b049a7fe7713e2') in 0.011461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.945637 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Materials
+  artifactKey: Guid(7126f6c4101bdaf48b0c2d2d8087329f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Materials using Guid(7126f6c4101bdaf48b0c2d2d8087329f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f52b1a00decad12732517b75a6d12429') in 0.008699 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.058603 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Materials/Green.mat
+  artifactKey: Guid(58580be5a1ee44d42a9966d48abb8758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Materials/Green.mat using Guid(58580be5a1ee44d42a9966d48abb8758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63ad645591787c2b62eba2e6d9b0d81') in 0.025088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Materials/Orange.mat
+  artifactKey: Guid(aeea0b0ce40f57741addd46857bdbc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Materials/Orange.mat using Guid(aeea0b0ce40f57741addd46857bdbc00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604139f0cbcb0e2fcff1a23d91180761') in 0.034410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Materials/Sand.mat
+  artifactKey: Guid(ab1c456102124f54b9ac73a185735796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/LowPolyRockPack/Materials/Sand.mat using Guid(ab1c456102124f54b9ac73a185735796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7971dc405a1f7675a5e9eb3c12e08fbb') in 0.058285 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.697402 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/PreafabsROCK`S
+  artifactKey: Guid(fb6ca30714ea3ea489f5394dcfaf59e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/BrokenVector/PreafabsROCK`S using Guid(fb6ca30714ea3ea489f5394dcfaf59e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b767b45a1ac7464a94229f2674faeb') in 0.009583 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.359840 seconds.
+  path: Assets/3D Prefabs/Tower/MainTower/Castle_Blue.prefab
+  artifactKey: Guid(cc5c44c196481c94b8b517e9b0419c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Tower/MainTower/Castle_Blue.prefab using Guid(cc5c44c196481c94b8b517e9b0419c37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e022cc4451ea507c5172566b67de0379') in 0.040231 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009276 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\PaperRockAndScissor\PaperRockAndScissor\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\PaperRockAndScissor\PaperRockAndScissor\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.861 seconds
+Domain Reload Profiling:
+	ReloadAssembly (861ms)
+		BeginReloadAssembly (129ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (35ms)
+		EndReloadAssembly (654ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (230ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (262ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.39 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4228 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (84.3 KB). Loaded Objects now: 4766.
+Memory consumption went from 171.4 MB to 171.3 MB.
+Total: 2.947800 ms (FindLiveObjects: 0.271300 ms CreateObjectMapping: 0.103400 ms MarkObjects: 2.465100 ms  DeleteObjects: 0.107300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 388.959261 seconds.
+  path: Assets/3D Prefabs/Enemy/Paper/PaperPreafb
+  artifactKey: Guid(de1c25dd5a44b2d4db5f15cdb2427fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Enemy/Paper/PaperPreafb using Guid(de1c25dd5a44b2d4db5f15cdb2427fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31e1aa0d35ef66a834633782c8ecbf5c') in 0.016002 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.181605 seconds.
+  path: Assets/3D Prefabs/Enemy/Paper/PaperModel
+  artifactKey: Guid(de1c25dd5a44b2d4db5f15cdb2427fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Enemy/Paper/PaperModel using Guid(de1c25dd5a44b2d4db5f15cdb2427fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa0933882971d4bc524a77bbde61503') in 0.009044 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.059634 seconds.
+  path: Assets/3D Prefabs/Paper1.prefab
+  artifactKey: Guid(61485a1adb2586147ad453c37f616097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Paper1.prefab using Guid(61485a1adb2586147ad453c37f616097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0784b8ddb1010fdb88b07aab9bae6938') in 0.053909 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009094 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image D:\PaperRockAndScissor\PaperRockAndScissor\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image D:\PaperRockAndScissor\PaperRockAndScissor\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.949 seconds
+Domain Reload Profiling:
+	ReloadAssembly (949ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (742ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (308ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.06 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4228 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 46 unused Assets / (82.5 KB). Loaded Objects now: 4770.
+Memory consumption went from 171.4 MB to 171.3 MB.
+Total: 3.106800 ms (FindLiveObjects: 0.279100 ms CreateObjectMapping: 0.096400 ms MarkObjects: 2.630800 ms  DeleteObjects: 0.099800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 118.637010 seconds.
+  path: Assets/3D Prefabs/Enemy/Paper/Paper (enemy).prefab
+  artifactKey: Guid(5d3e4340c04fe0f4ca13462cb45753c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Enemy/Paper/Paper (enemy).prefab using Guid(5d3e4340c04fe0f4ca13462cb45753c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e5a895580f678e45a2f98d7d70345b') in 0.063970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.531417 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Documentation.txt
+  artifactKey: Guid(ed9cc6bb9524084488e290acb80604e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Documentation.txt using Guid(ed9cc6bb9524084488e290acb80604e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc8c359967a8e90ece2fe538a7e180d6') in 0.020325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.608200 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Scenes
+  artifactKey: Guid(b2544a6a3ffa3974287d72841543ea7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Scenes using Guid(b2544a6a3ffa3974287d72841543ea7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae59859ecaaa8b18e9f03d718e4e4ec') in 0.008457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.193674 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Materials
+  artifactKey: Guid(f22b1e485fead40409054559b55c531d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Materials using Guid(f22b1e485fead40409054559b55c531d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b058c26720a1c64571db437403e1f2') in 0.001558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.340097 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models
+  artifactKey: Guid(931507ac8a6d37246aff8f318459ea43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models using Guid(931507ac8a6d37246aff8f318459ea43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9ec81e10bc78b77fc0c27a48a810b9') in 0.008523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 99.738937 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Bush 1.fbx
+  artifactKey: Guid(bacdb87a78a3ca847a674df0ff9c059b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Bush 1.fbx using Guid(bacdb87a78a3ca847a674df0ff9c059b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37a7656086988f9daa4c7034113521e9') in 0.070997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 4.fbx
+  artifactKey: Guid(32bc2c9ae46370946a34ec06ac1e3d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 4.fbx using Guid(32bc2c9ae46370946a34ec06ac1e3d27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '272933d3b86988681688d5421ae7828d') in 0.026119 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Street Tree 3.fbx
+  artifactKey: Guid(9962c23c3397e974e8a177c63dd7a880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Street Tree 3.fbx using Guid(9962c23c3397e974e8a177c63dd7a880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f126c1853b9d0b35e8ea68923e3c855') in 0.016151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 4.fbx
+  artifactKey: Guid(470b640c540b8464597afebdc0417272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 4.fbx using Guid(470b640c540b8464597afebdc0417272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13756d271d1c4da289e2a37c7bbe1c5e') in 0.015647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 14.fbx
+  artifactKey: Guid(b68611ee626df1946bbdc5220df5e906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 14.fbx using Guid(b68611ee626df1946bbdc5220df5e906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '540ff5d9ee3798d9962195067af78370') in 0.014077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Tree Trunk 1.fbx
+  artifactKey: Guid(97533931636edf546b150b213c13c802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Tree Trunk 1.fbx using Guid(97533931636edf546b150b213c13c802) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16c511f19beb389377e28a24466305fe') in 0.017182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 1.fbx
+  artifactKey: Guid(ff958687a533ccb4684a89286e9e6e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 1.fbx using Guid(ff958687a533ccb4684a89286e9e6e8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d60dec4e70c0bfa8b48ddf503064ca2') in 0.016790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 5.fbx
+  artifactKey: Guid(98000ac43d9a69f43b3fcd80b2afc8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 5.fbx using Guid(98000ac43d9a69f43b3fcd80b2afc8e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a145b2983bd3d39d09adeb2e72f7824') in 0.016679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Street Tree 5.fbx
+  artifactKey: Guid(00ce6d6f824e50e44a4d245ae8a0b40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Street Tree 5.fbx using Guid(00ce6d6f824e50e44a4d245ae8a0b40a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8451222f641939ef70adf7941519bd0') in 0.016967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 7.fbx
+  artifactKey: Guid(636e5d397017b52439bdcc726a921f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 7.fbx using Guid(636e5d397017b52439bdcc726a921f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f3024f7282ebe9b1cf51aeaccc5392') in 0.016729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 8.fbx
+  artifactKey: Guid(82ea1707c0c9cf540b501f54133135ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 8.fbx using Guid(82ea1707c0c9cf540b501f54133135ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec5bafd0c197512442452dad3cff58e') in 0.017715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Tree Trunk 2.fbx
+  artifactKey: Guid(1795f1e77d87dde43aaec93c77413144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Tree Trunk 2.fbx using Guid(1795f1e77d87dde43aaec93c77413144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e987c8bc4e50026c0b58b7ed99d672b') in 0.015922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 10.fbx
+  artifactKey: Guid(0c4d1587c93977f438dc0f191fcd4cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 10.fbx using Guid(0c4d1587c93977f438dc0f191fcd4cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69155f90247e5c0fec4c3457cad1d4a6') in 0.016917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 5.fbx
+  artifactKey: Guid(b58d7d85e23579e4f91d6393bef9cd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 5.fbx using Guid(b58d7d85e23579e4f91d6393bef9cd19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0039b07d54ee967f8758469f5cfe1d03') in 0.018624 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Street Tree 1.fbx
+  artifactKey: Guid(d3b48054d183a8b41a37b78316298e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Street Tree 1.fbx using Guid(d3b48054d183a8b41a37b78316298e1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652cb9ea4ea5e4f40406a47d0c12a179') in 0.017521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 15.fbx
+  artifactKey: Guid(2dbbba970fc8ed04fa6287df22c72206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/tree 15.fbx using Guid(2dbbba970fc8ed04fa6287df22c72206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ceb820c888347aad69eb1d0750a2dd') in 0.017154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Log 1.fbx
+  artifactKey: Guid(55df51f98c0b08f46b8eee7d9ca67422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Log 1.fbx using Guid(55df51f98c0b08f46b8eee7d9ca67422) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9750081ae24ea4b4b57d6d863116b07d') in 0.018181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 2.fbx
+  artifactKey: Guid(aab7f31e374a03d44923a155620b8f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Models/Potted Plant 2.fbx using Guid(aab7f31e374a03d44923a155620b8f18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc6217ba518bb1621e413321bd2f1214') in 0.016866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.496361 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Bush 2.prefab
+  artifactKey: Guid(9c90430fdda32824ab31504372faa134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Prefabs/Bush 2.prefab using Guid(9c90430fdda32824ab31504372faa134) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aeeac6c26f387f252a0a6be8e16a582') in 0.003023 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.939877 seconds.
+  path: Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Materials/Floor 2.mat
+  artifactKey: Guid(ea92d207446100144b68868b9074318c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/3D Prefabs/Meterial/Low Poly Fire/Low Poly Grass/Nature Pack - Low Polly Trees & Bushes/Materials/Floor 2.mat using Guid(ea92d207446100144b68868b9074318c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68e0a38f9dfbdfabe4c0715c0d997753') in 0.017185 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
