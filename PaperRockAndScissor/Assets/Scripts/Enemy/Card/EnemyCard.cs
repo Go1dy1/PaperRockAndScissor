@@ -1,119 +1,151 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using DG.Tweening;
+using Storage;
+using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
-public class EnemyCard : MonoBehaviour
-{
-[SerializeField] internal CardType ENtypeOfCard ;
-[SerializeField] internal StateUnit ENcurrentState;
-[SerializeField] internal Transform Pos;
-public ParticleSystem Puff;
-public AudioSource Death;
-public float HealPoint ;
-public float ENDamage ;
-public float ModifyDamage;
-public Transform Tower;
-public float Speed;
-private int ZeroHP = 0;
-[SerializeField] internal NavMeshAgent agent;
- private void Awake(){ 
-    agent = GetComponent<NavMeshAgent>();
-    ENcurrentState= StateUnit.WalkToCastle;
-
-    
-}
-void Update() {
-
- if(HealPoint<=0f){
-   
-    CharacterManager.enemyList.Remove(gameObject);
-    Destroy(gameObject);
- } 
-}
-internal NavMeshAgent TempMethod(NavMeshAgent agent,Transform Tower){
-    if(ENcurrentState == StateUnit.WalkToCastle){
-            agent.SetDestination(Tower.position);
-        }
-         return agent;
-}
-private void OnTriggerEnter(Collider other) {
-    EnemyCard enemyCard= gameObject.GetComponent<EnemyCard>();
-    Card AllyCard= other.gameObject.GetComponent<Card>();
-
-  if(enemyCard.HealPoint<=ZeroHP)
-  {
-    SpawnEffect();
-    CharacterManager.enemyList.Remove(enemyCard.gameObject);
-    Destroy(enemyCard.gameObject);
-  }
-
-    if(other.tag=="Ally")
-    { 
-
-        if(AllyCard.typeOfCard== CardType.Stone)
-        { 
-            if(enemyCard.ENtypeOfCard == CardType.Scissors)
-            {
-                HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,enemyCard.ModifyDamage);
-            }
-            else
-            {
-                HealPoint = Attack(enemyCard.ENDamage, HealPoint);
-            }
-        }
-        else if(AllyCard.typeOfCard== CardType.Paper)
-        {
-            if(enemyCard.ENtypeOfCard == CardType.Stone)
-            {
-                HealPoint= ModAttack( enemyCard.ENDamage,HealPoint,enemyCard.ModifyDamage);
-            }
-            else
-            {
-                HealPoint = Attack(enemyCard.ENDamage, HealPoint);
-            }
-        }
-        else if (AllyCard.typeOfCard== CardType.Scissors)
-        {
-            if (enemyCard.ENtypeOfCard == CardType.Paper)
-            {
-                HealPoint = ModAttack(enemyCard.ENDamage, HealPoint, enemyCard.ModifyDamage);
-            }
-            else
-            {
-                HealPoint = Attack(enemyCard.ENDamage, HealPoint);
-            }
+    public class EnemyCard : MonoBehaviour
+    {
+        [SerializeField] internal CardType _eNtypeOfCard ;
+        [SerializeField] private StateUnit _eNcurrentState;
+        [SerializeField] private Transform _pos;
+        [SerializeField] private ParticleSystem _puff;
+        [SerializeField] private AudioSource _death;
+        [SerializeField] protected float _healPoint;
         
-        }
-        ComeBack();
-        }
-}
+        public float _broadcastHealPoint ;
+        [SerializeField] protected float _enDamage ;
+        [SerializeField] protected float _modifyDamage;
+        [SerializeField] protected float _speed;
+        [SerializeField] public Transform _tower;
+        private float _tempHealPoint;
+        private const int _zeroHp = 0;
+        [SerializeField] protected NavMeshAgent _agent;
+        private void Awake(){ 
+            _agent = GetComponent<NavMeshAgent>();
+            _eNcurrentState= StateUnit.WalkToCastle;
+            _tempHealPoint = _healPoint;
 
-public void SpawnEffect()
-{   
-    Instantiate(Puff,gameObject.transform.position,Quaternion.identity);
-    Instantiate(Death,gameObject.transform.position,Quaternion.identity);
+        }
+        void Update() {
 
-}
-public float Attack(float damage, float health){
-        health= health- damage;
-        return health;
+            if(_healPoint<=0f){
+   
+                CharacterManager.EnemyList.Remove(gameObject);
+                Destroy(gameObject);
+            }
+
+            if (_healPoint < _tempHealPoint)
+            {
+                ComeBack();
+                _tempHealPoint = _healPoint;
+            }
+        }
+        internal NavMeshAgent TempMethod(NavMeshAgent agent,Transform tower){
+            if(_eNcurrentState == StateUnit.WalkToCastle) 
+            {
+                agent.SetDestination(tower.position);
+            }
+            return agent;
+        }
+        private void OnTriggerEnter(Collider other) 
+        {
+            
+            if(_healPoint<=_zeroHp)
+            {
+                SpawnEffect();
+                CharacterManager.EnemyList.Remove(gameObject);
+                Destroy(gameObject);
+            }
+
+            
+        }
+
+        private void SpawnEffect()
+        {
+            var position = gameObject.transform.position;
+            Instantiate(_puff, position,Quaternion.identity);
+            Instantiate(_death, position,Quaternion.identity);
+
+        }
+
+        private float Attack(float damage, float health){
+            health= health- damage;
+            return health;
+        }
+
+        private float ModAttack(float damage, float health, float modifyDamage){
+            health= health- (damage*modifyDamage);
+            return health;
+        }
+        public void ComeBack(){
+            if(gameObject!=null)transform.DOMove(_pos.position,0.2f,false);
+        }
+        public NavMeshAgent FollowAttack(NavMeshAgent agent, Transform allyPerson){
+            agent.SetDestination(allyPerson.position);
+            return agent;
+        }
+        NavMeshAgent NullAgent(NavMeshAgent agent){
+            agent.isStopped = true;
+            return agent;
+        }
+
     }
-public float ModAttack(float damage, float health, float modifyDamage){
-     health= health- (damage*modifyDamage);
-        return health;
-}
-private void ComeBack(){
-   if(gameObject!=null)transform.DOMove(Pos.position,0.2f,false);
-}
-public NavMeshAgent FollowAttack(NavMeshAgent agent, Transform AllyPerson){
-    agent.SetDestination(AllyPerson.position);
-    return agent;
-}
-NavMeshAgent NullAgent(NavMeshAgent agent){
-    agent.isStopped = true;
-    return agent;
-}
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   if(other.CompareTag("Ally"))
+            { 
+
+                if(allyCard._typeOfCard== CardType.Stone)
+                { 
+                    if(enemyCard._eNtypeOfCard == CardType.Scissors)
+                    {
+                        _healPoint= ModAttack( enemyCard._enDamage,_healPoint,enemyCard._modifyDamage);
+                    }
+                    else
+                    {
+                        _healPoint = Attack(enemyCard._enDamage, _healPoint);
+                    }
+                }
+                else if(allyCard._typeOfCard== CardType.Paper)
+                {
+                    if(enemyCard._eNtypeOfCard == CardType.Stone)
+                    {
+                        _healPoint= ModAttack( enemyCard._enDamage,_healPoint,enemyCard._modifyDamage);
+                    }
+                    else
+                    {
+                        _healPoint = Attack(enemyCard._enDamage, _healPoint);
+                    }
+                }
+                else if (allyCard._typeOfCard== CardType.Scissors)
+                {
+                    if (enemyCard._eNtypeOfCard == CardType.Paper)
+                    {
+                        _healPoint = ModAttack(enemyCard._enDamage, _healPoint, enemyCard._modifyDamage);
+                    }
+                    else
+                    {
+                        _healPoint = Attack(enemyCard._enDamage, _healPoint);
+                    }
+        
+                }
+                ComeBack();
+            }
+            */

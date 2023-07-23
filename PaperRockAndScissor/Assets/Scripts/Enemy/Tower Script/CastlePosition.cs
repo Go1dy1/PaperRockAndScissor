@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class CastlePosition : MonoBehaviour
 {
-    internal Transform enemyPos;
-    public static CastlePosition enemy;
+    internal Transform EnemyPos;
+    public static CastlePosition Enemy;
     void Start()
     {
-        enemy= this;
-        enemyPos = gameObject.transform;
+        Enemy= this;
+        EnemyPos = gameObject.transform;
 
     }
 

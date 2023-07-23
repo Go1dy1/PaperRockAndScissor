@@ -235,9 +235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 591aa7184507713488ec2a81bc1c5182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TestADS: 1
-  IOsId: 5286335
-  AndroidId: 5286334
+  _testAds: 1
+  _osId: 5286335
+  _androidId: 5286334
 --- !u!4 &30364847
 Transform:
   m_ObjectHideFlags: 0
@@ -265,8 +265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9897df9ca63f1843a63261c7c61ae99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IOsId: 'Interstitial_iOS '
-  AndroidId: Interstitial_Android
+  _osId: 'Interstitial_iOS '
+  _androidId: Interstitial_Android
 --- !u!4 &117529426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464554582469298378, guid: 9e76e5193c4966c42a1088f204b70e9a, type: 3}
@@ -2608,7 +2608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e62f5c712767d458cfe4ded2eac65c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stone: {fileID: 8908564322345977591, guid: 6cf3a4f0cfa41dd4c88ab3f84b1e4c54, type: 3}
+  _stone: {fileID: 8908564322345977591, guid: 6cf3a4f0cfa41dd4c88ab3f84b1e4c54, type: 3}
 --- !u!114 &1352506420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2621,7 +2621,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 970f0204537f457419d7f67edfcc75ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Paper: {fileID: 1012193302876043659, guid: 9544034515f26964e80e1f2c03f101dc, type: 3}
+  _paper: {fileID: 1012193302876043659, guid: 9544034515f26964e80e1f2c03f101dc, type: 3}
 --- !u!114 &1352506421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,7 +2634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc247c054ffcde458e5f9a361e08b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scissors: {fileID: 4823861802570216590, guid: 81ab7db489685484499ca47e8c9be6da, type: 3}
+  _scissors: {fileID: 4823861802570216590, guid: 81ab7db489685484499ca47e8c9be6da, type: 3}
 --- !u!1001 &1357469606
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4726,9 +4726,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baf9233db0c8ab544846d7ee359933cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stone: {fileID: 271503447572326447, guid: 5320eb5cb7ca82b43b3391b7d7c74ef6, type: 3}
-  paper: {fileID: 2432453713354586009, guid: 5d3e4340c04fe0f4ca13462cb45753c9, type: 3}
-  scissors: {fileID: 7221892157753097244, guid: d85b848d14ae6824baee72329e86f28a, type: 3}
+  _stone: {fileID: 271503447572326447, guid: 5320eb5cb7ca82b43b3391b7d7c74ef6, type: 3}
+  _paper: {fileID: 2432453713354586009, guid: 5d3e4340c04fe0f4ca13462cb45753c9, type: 3}
+  _scissors: {fileID: 7221892157753097244, guid: d85b848d14ae6824baee72329e86f28a, type: 3}
 --- !u!4 &1959472797
 Transform:
   m_ObjectHideFlags: 0
@@ -5368,8 +5368,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1382ce28a1b5c1a4a928f569d536787c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollectedHeal: {fileID: 2111925909}
-  EnemyCastle: {fileID: 1354418012192188}
+  _collectedHeal: {fileID: 2111925909}
+  _enemyCastle: {fileID: 1354418012192188}
 --- !u!114 &33258494548356466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5394,8 +5394,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1957b656de9699e4cbb36635dd590951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collectedHealText: {fileID: 1226798159}
-  myCastleObject: {fileID: 1658951801189567}
+  _collectedHealText: {fileID: 1226798159}
+  _myCastleObject: {fileID: 1658951801189567}
 --- !u!1001 &1562551146804755229
 PrefabInstance:
   m_ObjectHideFlags: 0

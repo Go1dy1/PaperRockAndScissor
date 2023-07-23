@@ -1,41 +1,46 @@
+using ADS;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class Timer : MonoBehaviour
 {
-    [SerializeField] private GameObject menu, lose, win, tie;
-    [SerializeField] private TMP_Text timerText;
-    private float timeStart = 90f;
-    private const float lowTime = 0;
-    public PassADS ad;
-    private bool showAds = false;
+    [FormerlySerializedAs("menu")] [SerializeField] private GameObject _menu;
+    [FormerlySerializedAs("lose")] [SerializeField] private GameObject _lose;
+    [FormerlySerializedAs("win")] [SerializeField] private GameObject _win;
+    [FormerlySerializedAs("tie")] [SerializeField] private GameObject _tie;
+    [FormerlySerializedAs("timerText")] [SerializeField] private TMP_Text _timerText;
+    private float _timeStart = 90f;
+    private const float LowTime = 0;
+    [FormerlySerializedAs("ad")] public PassAds _ad;
+    private bool _showAds = false;
 
     void Start()
     {
-        timerText.text = timeStart.ToString();
+        _timerText.text = _timeStart.ToString();
     }
 
     void Update()
     {
-        timeStart -= Time.deltaTime;
-        timerText.text = Mathf.Round(timeStart).ToString();
+        _timeStart -= Time.deltaTime;
+        _timerText.text = Mathf.Round(_timeStart).ToString();
 
-        if (timeStart <= lowTime || EnemyCrush.HealPoint <= lowTime || TowerManager.healPointTower <= lowTime)
+        if (_timeStart <= LowTime || EnemyCrush.HealPoint <= LowTime || TowerManager.HealPointTower <= LowTime)
         {
-            timeStart = lowTime;
-            menu.SetActive(true);
+            _timeStart = LowTime;
+            _menu.SetActive(true);
 
-            if (EnemyCrush.HealPoint > TowerManager.healPointTower)
-                lose.SetActive(true);
-            else if (EnemyCrush.HealPoint < TowerManager.healPointTower)
-                win.SetActive(true);
+            if (EnemyCrush.HealPoint > TowerManager.HealPointTower)
+                _lose.SetActive(true);
+            else if (EnemyCrush.HealPoint < TowerManager.HealPointTower)
+                _win.SetActive(true);
             else
-                tie.SetActive(true);
+                _tie.SetActive(true);
 
-            if (!showAds)
+            if (!_showAds)
             {
-                showAds = true;
-                ad.ShowAd();
+                _showAds = true;
+                _ad.ShowAd();
             }
         }
     }

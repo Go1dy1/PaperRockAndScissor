@@ -5,13 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class StopPlayGame : MonoBehaviour
 {
- private bool isPaused = false;
+ private bool _isPaused = false;
 
     public void TogglePause()
     {
-        isPaused = !isPaused;
+        _isPaused = !_isPaused;
 
-        if (isPaused)
+        if (_isPaused)
         {
             Time.timeScale = 0f; // Остановка времени
         }

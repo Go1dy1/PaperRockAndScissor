@@ -1,62 +1,66 @@
 using UnityEngine;
 using UnityEngine.Advertisements;
-public class PassADS : MonoBehaviour, IUnityAdsLoadListener,IUnityAdsShowListener
-{
-   [SerializeField] private string IOsId= "Interstitial_iOS ";
-   [SerializeField] private string AndroidId ="Interstitial_Android";
 
-    private string adID;
+namespace ADS
+{
+    public class PassAds : MonoBehaviour, IUnityAdsLoadListener,IUnityAdsShowListener
+    {
+        [SerializeField] private string _osId= "Interstitial_iOS ";
+        [SerializeField] private string _androidId ="Interstitial_Android";
+
+        private string _adID;
 
     
 
-void Awake()
-{
-adID= (Application.platform == RuntimePlatform.IPhonePlayer)? IOsId: AndroidId;
-    LoadAd();
-}
+        void Awake()
+        {
+            _adID= (Application.platform == RuntimePlatform.IPhonePlayer)? _osId: _androidId;
+            LoadAd();
+        }
 
-public void LoadAd()
-{
-  // Debug.Log("Loading Ad:" + adID);
-    Advertisement.Load(adID, this);
-}
+        public void LoadAd()
+        {
+            // Debug.Log("Loading Ad:" + adID);
+            Advertisement.Load(_adID, this);
+        }
 
-public void ShowAd()
-{
+        public void ShowAd()
+        {
 //    Debug.Log("Show Ad:" + adID);
-    Advertisement.Show(adID, this);
-}
+            Advertisement.Show(_adID, this);
+        }
 
-    public void OnUnityAdsAdLoaded(string placementId)
-    {
+        public void OnUnityAdsAdLoaded(string placementId)
+        {
         
-        print("AdsLoaded");
+            print("AdsLoaded");
         
-    }
+        }
 
-    public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message)
-    {
-        throw new System.NotImplementedException();
-    }
+        public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message)
+        {
+            throw new System.NotImplementedException();
+        }
 
-    public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message)
-    {
-        throw new System.NotImplementedException();
-    }
+        public void OnUnityAdsShowFailure(string placementId, UnityAdsShowError error, string message)
+        {
+            throw new System.NotImplementedException();
+        }
 
-    public void OnUnityAdsShowStart(string placementId)
-    {
-        print("AdsStart");
-    }
+        public void OnUnityAdsShowStart(string placementId)
+        {
+            print("AdsStart");
+        }
 
-    public void OnUnityAdsShowClick(string placementId)
-    {
-        throw new System.NotImplementedException();
-    }
+        public void OnUnityAdsShowClick(string placementId)
+        {
+            throw new System.NotImplementedException();
+        }
 
-    public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
-    {
-        LoadAd();
+        public void OnUnityAdsShowComplete(string placementId, UnityAdsShowCompletionState showCompletionState)
+        {
+            LoadAd();
+        }
     }
 }
 

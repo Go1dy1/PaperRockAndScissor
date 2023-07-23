@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class RestartMenu : MonoBehaviour
@@ -8,15 +9,16 @@ public class RestartMenu : MonoBehaviour
     Restart,
     Home,
     }
-    [SerializeField]private Button Restart, Home;
+    [FormerlySerializedAs("Restart")] [SerializeField]private Button _restart;
+    [FormerlySerializedAs("Home")] [SerializeField]private Button _home;
 
     void Start()
     {
-        Restart.onClick.AddListener(()=>LEVELS(ButtonType.Restart));
-        Home.onClick.AddListener(()=>LEVELS(ButtonType.Home));
+        _restart.onClick.AddListener(()=>Levels(ButtonType.Restart));
+        _home.onClick.AddListener(()=>Levels(ButtonType.Home));
     }
 
-public void LEVELS(ButtonType buttonType){
+public void Levels(ButtonType buttonType){
      switch (buttonType)
     {
         case ButtonType.Restart:

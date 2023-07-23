@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ChestDemo : MonoBehaviour {
 
     //This script goes on the ChestComplete prefab;
 
-    public Animator chestAnim; //Animator for the chest;
+    [FormerlySerializedAs("chestAnim")] public Animator _chestAnim; //Animator for the chest;
 
 	// Use this for initialization
 	void Awake ()
     {
         //get the Animator component from the chest;
-        chestAnim = GetComponent<Animator>();
+        _chestAnim = GetComponent<Animator>();
         //start opening and closing the chest for demo purposes;
         StartCoroutine(OpenCloseChest());
 	}
@@ -21,11 +22,11 @@ public class ChestDemo : MonoBehaviour {
     IEnumerator OpenCloseChest()
     {
         //play open animation;
-        chestAnim.SetTrigger("open");
+        _chestAnim.SetTrigger("open");
         //wait 2 seconds;
         yield return new WaitForSeconds(2);
         //play close animation;
-        chestAnim.SetTrigger("close");
+        _chestAnim.SetTrigger("close");
         //wait 2 seconds;
         yield return new WaitForSeconds(2);
         //Do it again;

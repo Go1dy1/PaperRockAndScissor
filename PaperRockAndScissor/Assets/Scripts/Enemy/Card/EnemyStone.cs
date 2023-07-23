@@ -1,25 +1,35 @@
 using System.Collections;
-using System.Collections.Generic;
+using Ally.Card;
 using UnityEngine;
 using UnityEngine.AI;
-public class EnemyStone : EnemyCard
+public class EnemyStone : global:: EnemyCard,ICard
 {
-
-private void Awake() {
-    HealPoint= 12;
-    ENDamage = 3;
-    ModifyDamage= 3f;
-}
-private IEnumerator Start()
-{
-    yield return new WaitForEndOfFrame();
-    Tower= TowerManager.Ally.AllyPos;  
-    agent= GetComponent<NavMeshAgent>(); 
-}
-
+    private IEnumerator Start() 
+    {
+        _broadcastHealPoint = _healPoint;
+        
+        yield return new WaitForEndOfFrame();
+        _tower= TowerManager.Ally.AllyPos;  
+        _agent= GetComponent<NavMeshAgent>(); 
+    }
     void Update()
     {
-        TempMethod(agent,Tower);
+        _healPoint = _broadcastHealPoint;
+        TempMethod(_agent,_tower);
     }
-    
+    public float Attack(float healPoints, ICard currentCard)
+    {
+        if (currentCard as Scissors)
+        {
+            healPoints -= (_enDamage + _modifyDamage);
+        }
+        else
+        {
+            healPoints -= _enDamage;
+        }
+        
+        ComeBack();
+
+        return healPoints;
+    }
 }

@@ -5,16 +5,16 @@ using UnityEngine;
 public class StopPlayingMusic : MonoBehaviour
 {
     
-    private AudioSource audioDeath;
+    private AudioSource _audioDeath;
 
     void Start()
     {
-        audioDeath = GetComponent<AudioSource>();
+        _audioDeath = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!audioDeath.isPlaying)Destroy(gameObject);
+        if(!_audioDeath.isPlaying)Destroy(gameObject);
     }
 }

@@ -1,19 +1,21 @@
 using System.Collections;
+using Storage;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class StoneCreate : MonoBehaviour
 {
-    [SerializeField] GameObject Stone;
-    bool IsLocked = false;
+    [FormerlySerializedAs("Stone")] [SerializeField] GameObject _stone;
+    bool _isLocked = false;
     
-    public void CreateStonePrefab(GameObject Stone)
+    public void CreateStonePrefab(GameObject _stone)
     {
-        if(!IsLocked&& Unit.currentManaScore>=2)
+        if(!_isLocked&& Unit.CurrentManaScore>=2)
         {
-            Unit.currentManaScore-=2;
-            GameObject stone =Instantiate(Stone,new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f),Quaternion.identity);
-            CharacterManager.allyList.Add(stone.gameObject);
-            IsLocked = true;
+            Unit.CurrentManaScore-=2;
+            GameObject stonePrefab =Instantiate(_stone,new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f),Quaternion.identity);
+            CharacterManager.AllyList.Add(stonePrefab.gameObject);
+            _isLocked = true;
             StartCoroutine(IsLockedButton());
             
         }   
@@ -22,7 +24,7 @@ public class StoneCreate : MonoBehaviour
     IEnumerator IsLockedButton()
     {
         yield return new WaitForSeconds(1.5f);
-        IsLocked = false;
+        _isLocked = false;
     }
 
 }

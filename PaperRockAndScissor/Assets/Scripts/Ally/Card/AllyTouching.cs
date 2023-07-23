@@ -1,32 +1,36 @@
+using Storage;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
+
 public class AllyTouching : MonoBehaviour
 {
-float MinDist = Mathf.Infinity;
-   [SerializeField] private NavMeshAgent agent;
-   internal GameObject currentPoint ;
+float _minDist = Mathf.Infinity;
+    [SerializeField] private NavMeshAgent _agent;
+    private GameObject CurrentPoint ;
     void Update()
     {
-        foreach(GameObject Enemy in CharacterManager.enemyList)
+        foreach(GameObject enemy in CharacterManager.EnemyList)
         {
-          if (Enemy!=null)
+          if (enemy!=null)
           {
-            EnemyCard EnemyCard = Enemy.GetComponent<EnemyCard>();
+            EnemyCard enemyCard = enemy.GetComponent<EnemyCard>();
 
-            float tempDistanceBetObj= Vector3.Distance(transform.position,Enemy.transform.position);
+            float tempDistanceBetObj= Vector3.Distance(transform.position,enemy.transform.position);
 
-            if(Enemy.activeSelf &&tempDistanceBetObj<MinDist){
-                    currentPoint = Enemy;
-                    MinDist = tempDistanceBetObj;
-                }
-
-            if(currentPoint != null && MinDist < CharacterManager.MinDistance)
+            if(enemy.activeSelf &&tempDistanceBetObj<_minDist)
             {
-                agent.SetDestination(currentPoint.transform.position);
+                CurrentPoint = enemy;
+                _minDist = tempDistanceBetObj;
             }
-            else if(currentPoint != null&&!currentPoint.activeSelf)
+
+            if(CurrentPoint != null && _minDist < CharacterManager.MinDistance)
             {
-                currentPoint =null;
+                _agent.SetDestination(CurrentPoint.transform.position);
+            }
+            else if(CurrentPoint != null&&!CurrentPoint.activeSelf)
+            {
+                CurrentPoint =null;
             }
 
             

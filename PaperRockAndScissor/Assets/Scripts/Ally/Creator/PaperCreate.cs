@@ -1,19 +1,21 @@
 using System.Collections;
+using Storage;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PaperCreate : MonoBehaviour
 {
-    [SerializeField] GameObject Paper;
-    bool IsLocked = false;
+    [FormerlySerializedAs("Paper")] [SerializeField] GameObject _paper;
+    bool _isLocked = false;
     
-    public void CreatePaperPrefab(GameObject Stone)
+    public void CreatePaperPrefab(GameObject stone)
     {
-        if(!IsLocked && Unit.currentManaScore>=2)
+        if(!_isLocked && Unit.CurrentManaScore>=2)
         {
-            Unit.currentManaScore-=2;
-            GameObject paper =Instantiate(Paper,new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f),Quaternion.identity);
-            CharacterManager.allyList.Add(paper.gameObject);
-            IsLocked = true;
+            Unit.CurrentManaScore-=2;
+            GameObject paper =Instantiate(_paper,new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f),Quaternion.identity);
+            CharacterManager.AllyList.Add(paper.gameObject);
+            _isLocked = true;
             StartCoroutine(IsLockedButton());
             
         }   
@@ -22,7 +24,7 @@ public class PaperCreate : MonoBehaviour
     IEnumerator IsLockedButton()
     {
         yield return new WaitForSeconds(1.5f);
-        IsLocked = false;
+        _isLocked = false;
     }
 
 }

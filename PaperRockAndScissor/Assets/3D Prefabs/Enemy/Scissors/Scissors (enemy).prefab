@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 8005122485658184448}
   - component: {fileID: -6760338156851786893}
   - component: {fileID: -4292592856776468233}
+  - component: {fileID: 7935578511950881532}
   m_Layer: 0
   m_Name: Scissors (enemy)
   m_TagString: Enemy
@@ -147,17 +148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 335f24fbca4384142ab36abc37cc6da9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ENtypeOfCard: 1
-  ENcurrentState: 1
-  Pos: {fileID: 4935637670809631299}
-  Puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
-  Death: {fileID: 8908036723534655493, guid: 6393bf717f9d1c34cbdfb082d5e1aa37, type: 3}
-  HealPoint: 0
-  ENDamage: 0
-  ModifyDamage: 0
-  Tower: {fileID: 0}
-  Speed: 0
-  agent: {fileID: 8005122485658184448}
+  _eNtypeOfCard: 0
+  _eNcurrentState: 0
+  _pos: {fileID: 4935637670809631299}
+  _puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
+  _death: {fileID: 8908036723534655493, guid: 6393bf717f9d1c34cbdfb082d5e1aa37, type: 3}
+  _healPoint: 6
+  _enDamage: 4
+  _modifyDamage: 2
+  _speed: 0
+  _tower: {fileID: 0}
+  _agent: {fileID: 8005122485658184448}
 --- !u!114 &-4292592856776468233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +171,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb890389ff550546b2f48a8dbf3ca22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 8005122485658184448}
+  _agent: {fileID: 8005122485658184448}
+--- !u!114 &7935578511950881532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7221892157753097244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf5b85070cb1d946b0c210618c7a03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7772046146880369641
 GameObject:
   m_ObjectHideFlags: 0

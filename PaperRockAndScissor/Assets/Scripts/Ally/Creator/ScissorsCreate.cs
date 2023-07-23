@@ -1,19 +1,21 @@
 using System.Collections;
+using Storage;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class ScissorsCreate : MonoBehaviour
 {
-    [SerializeField] GameObject Scissors;
-    bool IsLocked = false;
+    [FormerlySerializedAs("Scissors")] [SerializeField] GameObject _scissors;
+    bool _isLocked = false;
     
-    public void CreateScissorsPrefab(GameObject Stone)
+    public void CreateScissorsPrefab(GameObject stone)
     {
-        if(!IsLocked&& Unit.currentManaScore>=1)
+        if(!_isLocked&& Unit.CurrentManaScore>=1)
         {
-            Unit.currentManaScore--;
-            GameObject scissors =Instantiate(Scissors,new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f),Quaternion.identity);
-            CharacterManager.allyList.Add(scissors.gameObject);
-            IsLocked = true;
+            Unit.CurrentManaScore--;
+            GameObject scissors =Instantiate(_scissors,new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f),Quaternion.identity);
+            CharacterManager.AllyList.Add(scissors.gameObject);
+            _isLocked = true;
             StartCoroutine(IsLockedButton());
             
         }   
@@ -22,7 +24,7 @@ public class ScissorsCreate : MonoBehaviour
     IEnumerator IsLockedButton()
     {
         yield return new WaitForSeconds(1.5f);
-        IsLocked = false;
+        _isLocked = false;
     }
 
 }

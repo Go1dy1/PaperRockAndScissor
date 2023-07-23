@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class StopPlayingParticle : MonoBehaviour
 {
-    private ParticleSystem particle;
+    private ParticleSystem _particle;
     void Start()
     {
-        particle = GetComponent<ParticleSystem>();
+        _particle = GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!particle.isPlaying)Destroy(gameObject);
+        if(!_particle.isPlaying)Destroy(gameObject);
 
       
     }

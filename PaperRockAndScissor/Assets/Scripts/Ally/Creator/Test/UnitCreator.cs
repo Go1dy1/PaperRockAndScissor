@@ -1,18 +1,24 @@
 using System.Collections;
+using Storage;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class UnitCreator : MonoBehaviour
 {
-  [SerializeField] private Button BStone,BScissors,BPaper;
-  [SerializeField] private GameObject Stone,Scissors,Paper;
-  private Vector3 SpawnPositionCard;
-  bool IsLocked = false;
+  [FormerlySerializedAs("BStone")] [SerializeField] private Button _bStone;
+  [FormerlySerializedAs("BScissors")] [SerializeField] private Button _bScissors;
+  [FormerlySerializedAs("BPaper")] [SerializeField] private Button _bPaper;
+  [FormerlySerializedAs("Stone")] [SerializeField] private GameObject _stone;
+  [FormerlySerializedAs("Scissors")] [SerializeField] private GameObject _scissors;
+  [FormerlySerializedAs("Paper")] [SerializeField] private GameObject _paper;
+  private Vector3 _spawnPositionCard;
+  bool _isLocked = false;
    
 private void Awake() {
-  BStone.onClick.AddListener(()=>ChoiceCard(CardType.Stone));
-  BScissors.onClick.AddListener(()=>ChoiceCard(CardType.Scissors));
-  BPaper.onClick.AddListener(()=>ChoiceCard(CardType.Paper));
+  _bStone.onClick.AddListener(()=>ChoiceCard(CardType.Stone));
+  _bScissors.onClick.AddListener(()=>ChoiceCard(CardType.Scissors));
+  _bPaper.onClick.AddListener(()=>ChoiceCard(CardType.Paper));
 }
 private void Start()
 {
@@ -20,35 +26,35 @@ private void Start()
 }
 public void ChoiceCard(CardType card)
 {
-  if(!IsLocked){
+  if(!_isLocked){
 
      switch (card)
     {
         case CardType.Stone :
-            if(Unit.currentManaScore>=2){
-               IsLocked = true;
+            if(Unit.CurrentManaScore>=2){
+               _isLocked = true;
             StartCoroutine(UnlockButtonAfterDelay(1.5f));
-              Unit.currentManaScore-=2;
-          GameObject stone= Instantiate(Stone,SpawnPositionCard,Quaternion.identity);
-          CharacterManager.allyList.Add(stone.gameObject);
+              Unit.CurrentManaScore-=2;
+          GameObject stone= Instantiate(_stone,_spawnPositionCard,Quaternion.identity);
+          CharacterManager.AllyList.Add(stone.gameObject);
             }
             break;
         case CardType.Scissors:
-        if(Unit.currentManaScore>=1){
-           IsLocked = true;
+        if(Unit.CurrentManaScore>=1){
+           _isLocked = true;
             StartCoroutine(UnlockButtonAfterDelay(1.5f));
-          Unit.currentManaScore-=1;
-          GameObject scissors=  Instantiate(Scissors,SpawnPositionCard,Quaternion.identity);
-          CharacterManager.allyList.Add(scissors.gameObject);
+          Unit.CurrentManaScore-=1;
+          GameObject scissors=  Instantiate(_scissors,_spawnPositionCard,Quaternion.identity);
+          CharacterManager.AllyList.Add(scissors.gameObject);
             }
             break;
         case CardType.Paper:
-        if(Unit.currentManaScore>=2){
-           IsLocked = true;
+        if(Unit.CurrentManaScore>=2){
+           _isLocked = true;
             StartCoroutine(UnlockButtonAfterDelay(1.5f));
-          Unit.currentManaScore-=2;
-          GameObject paper= Instantiate(Paper,SpawnPositionCard,Quaternion.identity);
-          CharacterManager.allyList.Add(paper.gameObject);
+          Unit.CurrentManaScore-=2;
+          GameObject paper= Instantiate(_paper,_spawnPositionCard,Quaternion.identity);
+          CharacterManager.AllyList.Add(paper.gameObject);
             }
             break;
         default:
@@ -60,7 +66,7 @@ public void ChoiceCard(CardType card)
 }
 private IEnumerator SpawnEnemy(){
   while(true){
-    SpawnPositionCard = new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f);
+    _spawnPositionCard = new Vector3(UnityEngine.Random.Range(-2f,2.15f), 1f, -15f);
 
     yield return new WaitForSeconds(5f);
   }
@@ -68,7 +74,7 @@ private IEnumerator SpawnEnemy(){
 }
 private IEnumerator UnlockButtonAfterDelay(float delay){
         yield return new WaitForSeconds(delay);
-        IsLocked = false;
+        _isLocked = false;
         
     }
 

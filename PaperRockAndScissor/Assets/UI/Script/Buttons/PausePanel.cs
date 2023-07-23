@@ -3,21 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.Serialization;
+
 public class PausePanel : MonoBehaviour
 {
-    public AudioMixerGroup Mixer;
-    private bool StopMusic = false;
+    [FormerlySerializedAs("Mixer")] public AudioMixerGroup _mixer;
+    private bool _stopMusic = false;
 public void ToggleMusic(){
-    if(StopMusic){
-        Mixer.audioMixer.SetFloat("MusicVolume",0);
+    if(_stopMusic){
+        _mixer.audioMixer.SetFloat("MusicVolume",0);
     }
-    else Mixer.audioMixer.SetFloat("MusicVolume",-80);
+    else _mixer.audioMixer.SetFloat("MusicVolume",-80);
 
-    if(StopMusic)StopMusic= false;
-    else StopMusic =true;
+    if(_stopMusic)_stopMusic= false;
+    else _stopMusic =true;
 }
 
 public void ChangeVolume(float volume ){
-    Mixer.audioMixer.SetFloat("MasterVolume",Mathf.Lerp(0,-80,volume));
+    _mixer.audioMixer.SetFloat("MasterVolume",Mathf.Lerp(0,-80,volume));
 }
 }

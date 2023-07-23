@@ -1,13 +1,15 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Storage;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class EnemyCreator : MonoBehaviour
 {
-[SerializeField] GameObject stone;
-[SerializeField] GameObject paper;
-[SerializeField] GameObject scissors;
+[FormerlySerializedAs("stone")] [SerializeField] GameObject _stone;
+[FormerlySerializedAs("paper")] [SerializeField] GameObject _paper;
+[FormerlySerializedAs("scissors")] [SerializeField] GameObject _scissors;
 //internal CardType cardType;
 
 internal static float TimetoSpawn = 5f;
@@ -21,17 +23,17 @@ private IEnumerator Start() {
     public GameObject GetRandomCardType(CardType cardType,Vector3 T){
     switch (cardType){   
         case CardType.Stone:
-        GameObject Stone = Instantiate(stone,T,Quaternion.identity);
-        CharacterManager.enemyList.Add(Stone.gameObject);
-        return Stone;
+        GameObject stone = Instantiate(_stone,T,Quaternion.identity);
+        CharacterManager.EnemyList.Add(stone.gameObject);
+        return stone;
         case CardType.Paper:
-        GameObject Paper = Instantiate(paper,T,Quaternion.identity);
-        CharacterManager.enemyList.Add(Paper.gameObject);
-        return Paper;
+        GameObject paper = Instantiate(_paper,T,Quaternion.identity);
+        CharacterManager.EnemyList.Add(paper.gameObject);
+        return paper;
         case CardType.Scissors:
-        GameObject Scissors = Instantiate(scissors,T,Quaternion.identity);
-        CharacterManager.enemyList.Add(Scissors.gameObject);
-        return Scissors;
+        GameObject scissors = Instantiate(_scissors,T,Quaternion.identity);
+        CharacterManager.EnemyList.Add(scissors.gameObject);
+        return scissors;
            default: Debug.LogError("Неизвестный тип карты");
            return null;
    }

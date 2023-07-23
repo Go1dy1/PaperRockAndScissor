@@ -1,24 +1,41 @@
 using System.Collections;
+using Enemy.Card;
 using UnityEngine;
 using UnityEngine.AI;
-public class Scissors : Card
+
+namespace Ally.Card
 {
-private void Awake() {
-    HealPoint= 6;
-    Damage = 4;
-    speed=4.5f; 
-    ModifyDamage= 2f;
-}
-private IEnumerator Start()
-{
-    yield return new WaitForEndOfFrame();
-    Tower= CastlePosition.enemy.enemyPos;  
-    agent= GetComponent<NavMeshAgent>(); 
-}
-void Update()
+    public class Scissors : global::Card,ICard
     {
-        TempMethod(agent,Tower);
+        private IEnumerator Start()
+        {
+            _broadcastHealPoint = _healPoint;
+            
+            yield return new WaitForEndOfFrame();
+            _tower= CastlePosition.Enemy.EnemyPos;  
+            Agent= GetComponent<NavMeshAgent>(); 
+        }
+        void Update()
+        {
+            _healPoint = _broadcastHealPoint;
+            WalkToTowerPosition(Agent,_tower);
+        }
+        
+        public float Attack(float healPoints, ICard currentCard)
+        {
+            if (currentCard as EnemyPaper)
+            {
+                healPoints -= (_Damage + _ModifyDamage);
+            }
+            else
+            {
+                healPoints -= _Damage;
+            }
+        
+            ComeBack();
+
+            return healPoints;
+        }
     }
-    
 }
 

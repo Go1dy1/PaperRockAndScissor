@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
  public enum ButtonType{
     Play,
@@ -11,13 +12,15 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
-[SerializeField] private Button Play,Options,Quit;
-    
-    void Start()
+[FormerlySerializedAs("Play")] [SerializeField] private Button _play;
+[FormerlySerializedAs("Options")] [SerializeField] private Button _options;
+[FormerlySerializedAs("Quit")] [SerializeField] private Button _quit;
+
+void Start()
     {
-      Play.onClick.AddListener(()=> Menu(ButtonType.Play));
-      Options.onClick.AddListener(()=> Menu(ButtonType.Options));
-      Quit.onClick.AddListener(()=> Menu(ButtonType.Quit));
+      _play.onClick.AddListener(()=> Menu(ButtonType.Play));
+      _options.onClick.AddListener(()=> Menu(ButtonType.Options));
+      _quit.onClick.AddListener(()=> Menu(ButtonType.Quit));
     }
 
    public void Menu(ButtonType buttonType){

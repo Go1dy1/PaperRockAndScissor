@@ -1,8 +1,9 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PosCollider : MonoBehaviour
 {
- public Collider clickAreaCollider;
+ [FormerlySerializedAs("clickAreaCollider")] public Collider _clickAreaCollider;
  public static bool AccsesPoint = false;
 
     private void Update()
@@ -14,7 +15,7 @@ public class PosCollider : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider == clickAreaCollider)AccsesPoint= true;
+                if (hit.collider == _clickAreaCollider)AccsesPoint= true;
                 else AccsesPoint= false;
                     
                 

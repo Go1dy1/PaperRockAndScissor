@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 642372255992463155}
   - component: {fileID: 1643600480358791918}
   - component: {fileID: 7241963588085183684}
+  - component: {fileID: 3774032019346900218}
   m_Layer: 0
   m_Name: Stone (enemy)
   m_TagString: Enemy
@@ -147,17 +148,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81b649c79d0269d4da40c1ff541b67e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ENtypeOfCard: 0
-  ENcurrentState: 1
-  Pos: {fileID: 2558935307428703856}
-  Puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
-  Death: {fileID: 8908036723534655493, guid: bf19a9c957b42f645bb1c95c8d5ed2cd, type: 3}
-  HealPoint: 0
-  ENDamage: 0
-  ModifyDamage: 0
-  Tower: {fileID: 0}
-  Speed: 0
-  agent: {fileID: 642372255992463155}
+  _eNtypeOfCard: 0
+  _eNcurrentState: 0
+  _pos: {fileID: 2558935307428703856}
+  _puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
+  _death: {fileID: 8908036723534655493, guid: bf19a9c957b42f645bb1c95c8d5ed2cd, type: 3}
+  _healPoint: 12
+  _enDamage: 3
+  _modifyDamage: 3
+  _speed: 0
+  _tower: {fileID: 0}
+  _agent: {fileID: 642372255992463155}
 --- !u!114 &7241963588085183684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +171,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb890389ff550546b2f48a8dbf3ca22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 642372255992463155}
+  _agent: {fileID: 642372255992463155}
+--- !u!114 &3774032019346900218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271503447572326447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf5b85070cb1d946b0c210618c7a03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &875414252715091930
 GameObject:
   m_ObjectHideFlags: 0

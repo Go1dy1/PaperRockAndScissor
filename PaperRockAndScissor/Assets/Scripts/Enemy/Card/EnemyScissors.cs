@@ -1,25 +1,36 @@
 using System.Collections;
+using Ally.Card;
 using UnityEngine;
 using UnityEngine.AI;
-public class EnemyScissors : EnemyCard
+public class EnemyScissors : EnemyCard,ICard
 {
-private void Awake()
+    private IEnumerator Start()
 {
-
-    HealPoint= 6; 
-    ENDamage = 4;
-    ModifyDamage= 2f;
-
-}
-
-private IEnumerator Start()
-{
+    _broadcastHealPoint = _healPoint;
+    
     yield return new WaitForEndOfFrame();
-    Tower= TowerManager.Ally.AllyPos;  
-    agent= GetComponent<NavMeshAgent>(); 
+    _tower= TowerManager.Ally.AllyPos;  
+    _agent= GetComponent<NavMeshAgent>(); 
 }
 void Update()
 {
-    TempMethod(agent,Tower);
+    _healPoint = _broadcastHealPoint;
+    TempMethod(_agent,_tower);
 }
+public float Attack(float healPoints, ICard currentCard)
+{
+    if (currentCard as Paper)
+    {
+        healPoints -= (_enDamage + _modifyDamage);
+    }
+    else
+    {
+        healPoints -= _enDamage;
+    }
+        
+    ComeBack();
+
+    return healPoints;
+}
+
 }

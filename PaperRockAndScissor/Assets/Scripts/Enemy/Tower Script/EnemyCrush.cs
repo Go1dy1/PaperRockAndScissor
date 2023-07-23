@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Storage;
 using TMPro;
+using UnityEngine.Serialization;
+
 public class EnemyCrush : MonoBehaviour
 {
-[SerializeField] TMP_Text CollectedHeal;
+[FormerlySerializedAs("CollectedHeal")] [SerializeField] TMP_Text _collectedHeal;
 static internal int HealPoint;
-[SerializeField] GameObject EnemyCastle;
-private Vector3 enemyfront = new Vector3(0.04f,0f,9.36f);
-private Vector3 enemyback = new Vector3(0f,0f,9.44f);
-private const int zero = 0; 
+[FormerlySerializedAs("EnemyCastle")] [SerializeField] GameObject _enemyCastle;
+private Vector3 _enemyfront = new Vector3(0.04f,0f,9.36f);
+private Vector3 _enemyback = new Vector3(0f,0f,9.44f);
+private const int Zero = 0; 
 
 void Awake(){
       HealPoint= 5;
@@ -18,11 +21,11 @@ void Awake(){
 void OnTriggerEnter(Collider other)
 {
 if(other.tag == "Ally"){
-  EnemyCastle.transform.DOMove(enemyfront,0f,false );
-  EnemyCastle.transform.DOMove(enemyback,1f,false);
-  CharacterManager.allyList.Remove(other.gameObject);
+  _enemyCastle.transform.DOMove(_enemyfront,0f,false );
+  _enemyCastle.transform.DOMove(_enemyback,1f,false);
+  CharacterManager.AllyList.Remove(other.gameObject);
   Destroy(other.gameObject);
-  if(HealPoint>zero){
+  if(HealPoint>Zero){
     HealPoint= HealPoint-1;
     EnemyCreator.TimetoSpawn -=0.3f;
   }
@@ -33,7 +36,7 @@ if(other.tag == "Ally"){
 
 }
 public void HealManager(){
-  CollectedHeal.text= HealPoint.ToString();
+  _collectedHeal.text= HealPoint.ToString();
 }
 
 }

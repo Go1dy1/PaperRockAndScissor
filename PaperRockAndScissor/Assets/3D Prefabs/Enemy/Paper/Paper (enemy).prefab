@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3093822414480269445}
   - component: {fileID: 6130552679470543772}
   - component: {fileID: 901610820461350490}
+  - component: {fileID: 5097508909212157250}
   m_Layer: 0
   m_Name: Paper (enemy)
   m_TagString: Enemy
@@ -102,17 +103,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed0eae5bdfdc301408c2cb0f53eb4aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ENtypeOfCard: 2
-  ENcurrentState: 1
-  Pos: {fileID: 109906269577277894}
-  Puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
-  Death: {fileID: 8908036723534655493, guid: c1025e54e57295746b891c23d1a71be8, type: 3}
-  HealPoint: 0
-  ENDamage: 0
-  ModifyDamage: 0
-  Tower: {fileID: 0}
-  Speed: 0
-  agent: {fileID: 3093822414480269445}
+  _eNtypeOfCard: 0
+  _eNcurrentState: 0
+  _pos: {fileID: 109906269577277894}
+  _puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
+  _death: {fileID: 8908036723534655493, guid: c1025e54e57295746b891c23d1a71be8, type: 3}
+  _healPoint: 8
+  _enDamage: 3
+  _modifyDamage: 2.5
+  _speed: 0
+  _tower: {fileID: 0}
+  _agent: {fileID: 3093822414480269445}
 --- !u!114 &901610820461350490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,7 +126,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb890389ff550546b2f48a8dbf3ca22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 3093822414480269445}
+  _agent: {fileID: 3093822414480269445}
+--- !u!114 &5097508909212157250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2432453713354586009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdf5b85070cb1d946b0c210618c7a03a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2432453714385675900
 GameObject:
   m_ObjectHideFlags: 0

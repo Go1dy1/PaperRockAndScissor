@@ -2,21 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using UnityEngine.Serialization;
 
 public class AdsManager : MonoBehaviour, IUnityAdsInitializationListener
 {
-   [SerializeField] private bool TestADS = true ; 
-   [SerializeField] string IOsId= "5286335";
-   [SerializeField] string AndroidId ="5286334";
+   [FormerlySerializedAs("TestADS")] [SerializeField] private bool _testAds = true ; 
+   [FormerlySerializedAs("IOsId")] [SerializeField] string _osId= "5286335";
+   [FormerlySerializedAs("AndroidId")] [SerializeField] string _androidId ="5286334";
 
-    private string gameID;
+    private string _gameID;
 void Awake()
 {
     InitializeAds();
 }
  public void InitializeAds(){
-    gameID = (Application.platform== RuntimePlatform.IPhonePlayer)? IOsId: AndroidId; 
-    Advertisement.Initialize(gameID, TestADS, this);
+    _gameID = (Application.platform== RuntimePlatform.IPhonePlayer)? _osId: _androidId; 
+    Advertisement.Initialize(_gameID, _testAds, this);
  }
 //IPhonePlayer
     public void OnInitializationComplete()
