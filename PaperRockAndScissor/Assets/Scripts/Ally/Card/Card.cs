@@ -18,11 +18,10 @@ public class Card : MonoBehaviour
 
 public float _broadcastHealPoint ;
 [SerializeField] protected float _Damage;
-[SerializeField] protected float _Speed;
 [SerializeField] protected float _ModifyDamage;
 private Card allyCard;
 private int _zeroHp = 0;
-private bool _direction= false;
+private bool _direction;
 internal NavMeshAgent Agent;
 
 private void Awake()
@@ -31,11 +30,6 @@ private void Awake()
     _currentState = StateUnit.Ide;
     Agent = GetComponent <NavMeshAgent>();    
 
-}
-
-public void Start()
-{
-    Card allyCard= gameObject.GetComponent<Card>();
 }
 private void Update()
 {
@@ -65,7 +59,7 @@ private Vector3 GetMousePosition()
     return default;
 }
 
-protected NavMeshAgent WalkToTowerPosition(NavMeshAgent agent, Transform tower)
+protected void WalkToTowerPosition(NavMeshAgent agent, Transform tower)
 {
     if (Input.GetMouseButton(0) && !_direction && gameObject != null)
     {
@@ -81,8 +75,6 @@ protected NavMeshAgent WalkToTowerPosition(NavMeshAgent agent, Transform tower)
     {
         agent.SetDestination(tower.position);
     }
-
-    return agent;
 }
 
 private void OnTriggerEnter(Collider other)
@@ -103,21 +95,6 @@ public void SpawnEffect()
     Instantiate(_death,gameObject.transform.position,Quaternion.identity);
 
 }
-
-public float Atttack(float damage, float health)
-{
-
-    health= health- damage;
-    return health;
-
-}
-public float ModAttack(float damage, float health, float modifyDamage)
-{
-
-    health= health- (damage*modifyDamage);
-    return health;
-
-}
 public void ComeBack()
 {
 
@@ -132,12 +109,6 @@ IEnumerator NavmeshStart()
     Agent.isStopped = false;
 
 }
-NavMeshAgent NullAgent(NavMeshAgent agent)
-{
-    agent.isStopped = true;
-    return agent;
-}
-
 }
 
 

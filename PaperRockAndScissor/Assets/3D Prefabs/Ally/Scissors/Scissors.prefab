@@ -133,16 +133,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d11d963d0927ddf4e9abb33df14c8400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _typeOfCard: 1
   _currentState: 0
   _pos: {fileID: 6183582131925318414}
   _puff: {fileID: 9112134744152255864, guid: e581f7a5e3028f34d9ecda742866e563, type: 3}
   _death: {fileID: 8908036723534655493, guid: 6393bf717f9d1c34cbdfb082d5e1aa37, type: 3}
   _tower: {fileID: 0}
   _healPoint: 6
+  _broadcastHealPoint: 0
   _Damage: 4
   _Speed: 4.5
-  _ModifyDamage: 2
+  _ModifyDamage: 4
 --- !u!114 &-6366247390282742426
 MonoBehaviour:
   m_ObjectHideFlags: 0

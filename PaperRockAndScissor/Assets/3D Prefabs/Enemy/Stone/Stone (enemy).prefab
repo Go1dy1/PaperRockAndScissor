@@ -153,7 +153,8 @@ MonoBehaviour:
   _pos: {fileID: 2558935307428703856}
   _puff: {fileID: 6851835241848469028, guid: c17a4499e07512f49acf6c60cc773c1c, type: 3}
   _death: {fileID: 8908036723534655493, guid: bf19a9c957b42f645bb1c95c8d5ed2cd, type: 3}
-  _healPoint: 12
+  _healPoint: 10
+  _broadcastHealPoint: 0
   _enDamage: 3
   _modifyDamage: 3
   _speed: 0

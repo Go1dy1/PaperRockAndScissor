@@ -12,8 +12,8 @@ public class StateController : MonoBehaviour
     {
         var _Icard = GetComponent<ICard>();
         var enemyCard = other.GetComponent<ICard>();
-        
-        if (other.CompareTag("Enemy"))
+
+        if (other.GetComponent<EnemyCard>() != null || other.GetComponentInChildren<EnemyCard>() != null)
         {
             var parentEnemyCard = other.GetComponent<EnemyCard>();
 

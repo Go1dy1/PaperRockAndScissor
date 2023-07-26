@@ -1,26 +1,27 @@
 using ADS;
+using Ally.Tower;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Serialization;
 
 public class Timer : MonoBehaviour
 {
-    [FormerlySerializedAs("menu")] [SerializeField] private GameObject _menu;
-    [FormerlySerializedAs("lose")] [SerializeField] private GameObject _lose;
-    [FormerlySerializedAs("win")] [SerializeField] private GameObject _win;
-    [FormerlySerializedAs("tie")] [SerializeField] private GameObject _tie;
-    [FormerlySerializedAs("timerText")] [SerializeField] private TMP_Text _timerText;
-    private float _timeStart = 90f;
+[SerializeField] private GameObject _menu;
+[SerializeField] private GameObject _lose;
+[SerializeField] private GameObject _win;
+[SerializeField] private GameObject _tie;
+[SerializeField] private TMP_Text _timerText;
+[SerializeField] private PassAds _ad;
+[SerializeField] private float _timeStart = 90f;
     private const float LowTime = 0;
-    [FormerlySerializedAs("ad")] public PassAds _ad;
-    private bool _showAds = false;
+    private bool _showAds;
 
-    void Start()
+     void Start()
     {
         _timerText.text = _timeStart.ToString();
     }
 
-    void Update()
+    private void Update()
     {
         _timeStart -= Time.deltaTime;
         _timerText.text = Mathf.Round(_timeStart).ToString();

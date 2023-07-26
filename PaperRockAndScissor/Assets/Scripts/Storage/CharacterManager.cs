@@ -10,7 +10,14 @@ namespace Storage
         public static List<GameObject> AllyList = new List<GameObject>();
     }
     public enum StateUnit
-    {Ide, 
+    {
+        Ide,
         WalkToCastle,
-        WalkToEnemy}
+    }
+    public enum CardType
+    {
+        Stone,
+        Scissors,
+        Paper
+    }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using Ally.Card;
+using Ally.Tower;
 using UnityEngine;
 using UnityEngine.AI;
 public class EnemyStone : global:: EnemyCard,ICard
@@ -15,7 +16,7 @@ public class EnemyStone : global:: EnemyCard,ICard
     void Update()
     {
         _healPoint = _broadcastHealPoint;
-        TempMethod(_agent,_tower);
+        WalkToTowerPosition(_agent,_tower);
     }
     public float Attack(float healPoints, ICard currentCard)
     {

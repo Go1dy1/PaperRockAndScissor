@@ -1,46 +1,57 @@
-using UnityEngine;
+using System;
 using DG.Tweening;
 using Storage;
 using TMPro;
-using UnityEngine.Serialization;
+using UnityEngine;
 
-public class TowerManager : MonoBehaviour
+namespace Ally.Tower
 {
-  [FormerlySerializedAs("collectedHealText")] [SerializeField] private TMP_Text _collectedHealText;
-  [FormerlySerializedAs("myCastleObject")] [SerializeField] private GameObject _myCastleObject;  
-  static internal int HealPointTower = 5;
-  private Vector3 _myFrontPosition = new Vector3(0.04f,0f,-19.298f);
-  private Vector3 _myBackPosition = new Vector3(0f,0f,-19.66f);
-  public Transform AllyPos{get;private set;} 
-  private const int Zero = 0; 
-  internal static TowerManager Ally;
+    public class TowerManager : MonoBehaviour
+    {
+        [SerializeField] private TMP_Text _collectedHealText;
+        [SerializeField] private GameObject _myCastleObject;
+        public static int HealPointTower { get; private set;}
+        private readonly Vector3 _myFrontPosition = new Vector3(0.04f,0f,-19.298f);
+        private readonly Vector3 _myBackPosition = new Vector3(0f,0f,-19.66f);
+        public Transform AllyPos{get;private set;}
+        internal static TowerManager Ally;
+
+        private void Awake()
+        {
+            HealPointTower = 5;
+        }
+
+        private void Start()
+        {
+            
+            Ally= this;
+            AllyPos = gameObject.transform;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.GetComponent<EnemyCard>() != null || other.GetComponentInChildren<EnemyCard>() != null)
+            {
+                MoveTowerTakenDamage();
+                CharacterManager.EnemyList.Remove(other.gameObject);
+                Destroy(other.gameObject);
+
+                UpdateHealText();
+            }
+        }
+
+        private void MoveTowerTakenDamage()
+        {
+            _myCastleObject.transform.DOMove(_myFrontPosition, 0f, false);
+            _myCastleObject.transform.DOMove(_myBackPosition, 1f, false);
+            if (HealPointTower > 0) HealPointTower-- ;
+        }
+
+        private void UpdateHealText()
+        {
+            _collectedHealText.text = HealPointTower.ToString();
+        }
 
 
-  private void Start()
-  {
-    Ally= this;
-    AllyPos = gameObject.transform;
-  }
-  void OnTriggerEnter(Collider other)
-  {
-      if (other.tag == "Enemy")
-      {
-          _myCastleObject.transform.DOMove(_myFrontPosition, 0f, false);
-          _myCastleObject.transform.DOMove(_myBackPosition, 1f, false);
-          CharacterManager.EnemyList.Remove(other.gameObject);
-          Destroy(other.gameObject);
-        
-          if (HealPointTower > 0)
-            HealPointTower--;
-        
-          UpdateHealText();
-      }
-  }
-
-  public void UpdateHealText()
-  {
-      _collectedHealText.text = HealPointTower.ToString();
-  }
-
-
+    }
 }
