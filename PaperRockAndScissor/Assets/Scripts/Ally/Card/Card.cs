@@ -1,10 +1,7 @@
-using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 using DG.Tweening;
-using Storage;
-using Unity.VisualScripting;
 using UnityEngine.AI;
-using UnityEngine.Serialization;
 using StateUnit = Storage.StateUnit;
 
 public class Card : MonoBehaviour
@@ -15,100 +12,81 @@ public class Card : MonoBehaviour
 [SerializeField] private AudioSource _death;
 [SerializeField] protected Transform _tower;
 [SerializeField] protected float _healPoint;
-
-public float _broadcastHealPoint ;
 [SerializeField] protected float _Damage;
 [SerializeField] protected float _ModifyDamage;
-private Card allyCard;
-private int _zeroHp = 0;
+protected NavMeshAgent Agent;
+public float _broadcastHealPoint ;
+protected const int ZeroHp = 0;
 private bool _direction;
-internal NavMeshAgent Agent;
 
-private void Awake()
-{ 
-    _broadcastHealPoint = _healPoint;
-    _currentState = StateUnit.Ide;
-    Agent = GetComponent <NavMeshAgent>();    
 
-}
-private void Update()
-{
-   
-    if(allyCard._healPoint<=_zeroHp)
+    private void Awake()
     { 
-        SpawnEffect();
-        CharacterManager.AllyList.Remove(allyCard.gameObject);
-        Destroy(allyCard.gameObject);
-            
+        _broadcastHealPoint = _healPoint;
+        _currentState = StateUnit.Ide;
+        Agent = GetComponent <NavMeshAgent>();    
+
     }
 
-}
-private Vector3 GetMousePosition()
-{
-
-    var mainCamera= Camera.main;
-    if (mainCamera != null)
+    public void Start()
     {
-        var ray =mainCamera.ScreenPointToRay (Input.mousePosition);
-        var plane = new Plane(Vector3.up, new Vector3 (0,0.5f,0));
-        plane.Raycast(ray, out float enter);
-        
-        return ray.GetPoint(enter);
+        gameObject.GetComponent<Card>();
     }
 
-    return default;
-}
-
-protected void WalkToTowerPosition(NavMeshAgent agent, Transform tower)
-{
-    if (Input.GetMouseButton(0) && !_direction && gameObject != null)
+    private Vector3 GetMousePosition()
     {
-        _currentState = StateUnit.WalkToCastle;
-        if (PosCollider.AccsesPoint == true && gameObject != null)
+
+        var mainCamera= Camera.main;
+        if (mainCamera != null)
         {
-            _direction = true;
-            transform.DOMove(GetMousePosition(), 1);
+            var ray =mainCamera.ScreenPointToRay (Input.mousePosition);
+            var plane = new Plane(Vector3.up, new Vector3 (0,0.5f,0));
+            plane.Raycast(ray, out float enter);
+            
+            return ray.GetPoint(enter);
+        }
+
+        return default;
+    }
+
+    protected void WalkToTowerPosition(NavMeshAgent agent, Transform tower)
+    {
+        if (Input.GetMouseButton(0) && !_direction && gameObject != null)
+        {
+            _currentState = StateUnit.WalkToCastle;
+            if (PosCollider.AccsesPoint == true && gameObject != null)
+            {
+                _direction = true;
+                transform.DOMove(GetMousePosition(), 1);
+            }
+        }
+
+        if (_direction && _currentState == StateUnit.WalkToCastle)
+        {
+            agent.SetDestination(tower.position);
         }
     }
-
-    if (_direction && _currentState == StateUnit.WalkToCastle)
+    
+    protected void SpawnEffect()
     {
-        agent.SetDestination(tower.position);
-    }
-}
+        var cardPosition = gameObject.transform.position;
+        Instantiate(_puff,cardPosition,Quaternion.identity);
+        Instantiate(_death,cardPosition,Quaternion.identity);
 
-private void OnTriggerEnter(Collider other)
-{
-    if(_healPoint<=_zeroHp)
+    }
+    protected void ComeBack()
     {
-        SpawnEffect();
-        CharacterManager.EnemyList.Remove(gameObject);
-        Destroy(gameObject);
+
+        if(gameObject!=null)transform.DOMove(_pos.position,0.2f,false);
+        NavmeshStart();
+
     }
-}
+    async void NavmeshStart()
+    {
+        await Task.Delay(200);
+       if(Agent!=null) Agent.isStopped = false;
 
-
-
-public void SpawnEffect()
-{   
-    Instantiate(_puff,gameObject.transform.position,Quaternion.identity);
-    Instantiate(_death,gameObject.transform.position,Quaternion.identity);
-
-}
-public void ComeBack()
-{
-
-    if(gameObject!=null)transform.DOMove(_pos.position,0.2f,false);
-    StartCoroutine(NavmeshStart());
-
-}
-IEnumerator NavmeshStart()
-{
-
-    yield return new WaitForSeconds(0.2f);
-    Agent.isStopped = false;
-
-}
+    }
 }
 
 

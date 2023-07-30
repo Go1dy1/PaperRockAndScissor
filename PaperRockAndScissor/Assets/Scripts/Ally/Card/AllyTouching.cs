@@ -1,7 +1,6 @@
 using Storage;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Serialization;
 
 public class AllyTouching : MonoBehaviour
 {

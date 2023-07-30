@@ -1,11 +1,9 @@
-using System;
 using DG.Tweening;
 using Storage;
 using TMPro;
 using UnityEngine;
 
-namespace Ally.Tower
-{
+
     public class TowerManager : MonoBehaviour
     {
         [SerializeField] private TMP_Text _collectedHealText;
@@ -54,4 +52,4 @@ namespace Ally.Tower
 
 
     }
-}
+

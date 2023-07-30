@@ -1,16 +1,17 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using Storage;
+using Unity.VisualScripting;
 
 namespace Ally.Card
 {
     public class Paper : global::Card,ICard
     {
-        private IEnumerator Start()
+        private new void Start()
         {
             _broadcastHealPoint = _healPoint;
-            
-            yield return new WaitForEndOfFrame();
+
             _tower= CastlePosition.Enemy.EnemyPos;  
             Agent= GetComponent<NavMeshAgent>(); 
         }
@@ -19,6 +20,13 @@ namespace Ally.Card
         {
             _healPoint = _broadcastHealPoint;
             WalkToTowerPosition(Agent,_tower);
+            
+            if (_healPoint < ZeroHp)
+            {
+                SpawnEffect();
+                CharacterManager.AllyList.Remove(gameObject);
+                Destroy(gameObject);
+            }
         }
         
         public float Attack(float healPoints, ICard currentCard)
@@ -35,6 +43,9 @@ namespace Ally.Card
             ComeBack();
 
             return healPoints;
+            
+            
+            
         }
             
         
