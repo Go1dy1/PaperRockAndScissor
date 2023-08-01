@@ -395,7 +395,6 @@
 "Assets/Scripts/Enemy/Tower Script/EnemyCrush.cs"
 "Assets/Scripts/Main/StateController.cs"
 "Assets/Scripts/Storage/CharacterManager.cs"
-"Assets/Scripts/Storage/Cont.cs"
 "Assets/UI/Script/Buttons/ButtonManager.cs"
 "Assets/UI/Script/Buttons/PausePanel.cs"
 "Assets/UI/Script/Buttons/RestartMenu.cs"

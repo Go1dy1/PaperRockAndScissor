@@ -1,8 +1,6 @@
-using System.Collections;
-using UnityEngine;
+using Enemy.Card;
 using UnityEngine.AI;
 using Storage;
-using Unity.VisualScripting;
 
 namespace Ally.Card
 {
@@ -16,7 +14,7 @@ namespace Ally.Card
             Agent= GetComponent<NavMeshAgent>(); 
         }
         
-        void Update()
+        public void Update()
         {
             _healPoint = _broadcastHealPoint;
             WalkToTowerPosition(Agent,_tower);

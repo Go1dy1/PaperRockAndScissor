@@ -1,6 +1,4 @@
-using System.Collections;
 using Ally.Card;
-using UnityEngine;
 using UnityEngine.AI;
 
 namespace Enemy.Card
@@ -14,10 +12,11 @@ namespace Enemy.Card
             _tower= TowerManager.Ally.AllyPos;  
             _agent= GetComponent<NavMeshAgent>(); 
         }
-        void Update()
+
+        private void Update()
         {
             _healPoint = _broadcastHealPoint;
-            TempMethod(_agent,_tower);
+            WalkToTheCastle(_agent,_tower);
         }
 
         public float Attack(float healPoints, ICard currentCard)

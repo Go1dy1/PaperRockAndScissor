@@ -1,34 +1,38 @@
-using System.Collections;
 using Ally.Card;
-using UnityEngine;
 using UnityEngine.AI;
-public class EnemyStone : global:: EnemyCard,ICard
+
+namespace Enemy.Card
 {
-    private void Start()
+    public class EnemyStone : global:: EnemyCard,ICard
     {
-        _broadcastHealPoint = _healPoint;
+        private void Start()
+        {
+            _broadcastHealPoint = _healPoint;
             
-        _tower= TowerManager.Ally.AllyPos;  
-        _agent= GetComponent<NavMeshAgent>(); 
-    }
-    void Update()
-    {
-        _healPoint = _broadcastHealPoint;
-        TempMethod(_agent,_tower);
-    }
-    public float Attack(float healPoints, ICard currentCard)
-    {
-        if (currentCard as Scissors)
-        {
-            healPoints -= (_enDamage + _modifyDamage);
+            _tower= TowerManager.Ally.AllyPos;  
+            _agent= GetComponent<NavMeshAgent>(); 
         }
-        else
+
+        private void Update()
         {
-            healPoints -= _enDamage;
+            _healPoint = _broadcastHealPoint;
+            WalkToTheCastle(_agent,_tower);
         }
         
-        ComeBack();
+        public float Attack(float healPoints, ICard currentCard)
+        {
+            if (currentCard as Scissors)
+            {
+                healPoints -= (_enDamage + _modifyDamage);
+            }
+            else
+            {
+                healPoints -= _enDamage;
+            }
+        
+            ComeBack();
 
-        return healPoints;
+            return healPoints;
+        }
     }
 }

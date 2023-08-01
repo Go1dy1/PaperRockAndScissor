@@ -1,6 +1,4 @@
-using System.Collections;
 using Enemy.Card;
-using UnityEngine;
 using UnityEngine.AI;
 using Storage;
 
@@ -15,7 +13,7 @@ namespace Ally.Card
             _tower= CastlePosition.Enemy.EnemyPos;  
             Agent= GetComponent<NavMeshAgent>(); 
         }
-        void Update()
+        public void Update()
         {
             _healPoint = _broadcastHealPoint;
             WalkToTowerPosition(Agent,_tower);

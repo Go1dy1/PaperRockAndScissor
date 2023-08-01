@@ -40,8 +40,8 @@ using UnityEngine;
 
         private void MoveTowerTakenDamage()
         {
-            _myCastleObject.transform.DOMove(_myFrontPosition, 0f, false);
-            _myCastleObject.transform.DOMove(_myBackPosition, 1f, false);
+            _myCastleObject.transform.DOMove(_myFrontPosition, 0f);
+            _myCastleObject.transform.DOMove(_myBackPosition, 1f);
             if (HealPointTower > 0) HealPointTower-- ;
         }
 

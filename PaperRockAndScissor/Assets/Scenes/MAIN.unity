@@ -1398,6 +1398,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5864171522337765700, guid: 6023a16927811a845868227845b594e4, type: 3}
   m_PrefabInstance: {fileID: 5864171522427586628}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &591793380 stripped
+BoxCollider:
+  m_CorrespondingSourceObject: {fileID: 5864171522337765563, guid: 6023a16927811a845868227845b594e4, type: 3}
+  m_PrefabInstance: {fileID: 5864171522427586628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &641299427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8426416335629494027, guid: 44deed2dab496bb4c853e5a63d0ef533, type: 3}
@@ -5658,6 +5663,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5864171522337765701, guid: 6023a16927811a845868227845b594e4, type: 3}
+      propertyPath: _clickAreaCollider
+      value: 
+      objectReference: {fileID: 591793380}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6023a16927811a845868227845b594e4, type: 3}
 --- !u!1001 &7349432589705001725
@@ -5671,6 +5680,10 @@ PrefabInstance:
       propertyPath: _camera
       value: 
       objectReference: {fileID: 963194227}
+    - target: {fileID: 7349432588572603614, guid: 5aeeb9c98d2e61646b0a1ad0b4ca02ba, type: 3}
+      propertyPath: _mixer
+      value: 
+      objectReference: {fileID: -2907676844617429872, guid: c7f1689730a5fbf40a7de902620b528c, type: 2}
     - target: {fileID: 7349432588895608590, guid: 5aeeb9c98d2e61646b0a1ad0b4ca02ba, type: 3}
       propertyPath: collectedManaText
       value: 

@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 public class StopPlayGame : MonoBehaviour
 {
  private bool _isPaused = false;
@@ -13,11 +10,11 @@ public class StopPlayGame : MonoBehaviour
 
         if (_isPaused)
         {
-            Time.timeScale = 0f; // Остановка времени
+            Time.timeScale = 0f; 
         }
         else
         {
-            Time.timeScale = 1f; // Возобновление времени
+            Time.timeScale = 1f; 
         }
     }
 }

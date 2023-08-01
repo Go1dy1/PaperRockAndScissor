@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
- public enum ButtonType{
+ public enum ButtonType
+ {
     Play,
     Options,
     Quit
@@ -12,29 +13,28 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
-[FormerlySerializedAs("Play")] [SerializeField] private Button _play;
-[FormerlySerializedAs("Options")] [SerializeField] private Button _options;
-[FormerlySerializedAs("Quit")] [SerializeField] private Button _quit;
+[SerializeField] private Button _play;
+[SerializeField] private Button _options;
+[SerializeField] private Button _quit;
 
-void Start()
+private void Start()
     {
       _play.onClick.AddListener(()=> Menu(ButtonType.Play));
       _options.onClick.AddListener(()=> Menu(ButtonType.Options));
       _quit.onClick.AddListener(()=> Menu(ButtonType.Quit));
     }
 
-   public void Menu(ButtonType buttonType){
+private void Menu(ButtonType buttonType){
      switch (buttonType)
     {
         case ButtonType.Play:
            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-            break;
-        case ButtonType.Options:
-           // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+2);
-            break;
+           break;
         case ButtonType.Quit:
             Debug.Log("Game done");
             Application.Quit();
+            break;
+        case ButtonType.Options:
             break;
         default:
             Debug.LogError("Кнопка не назначенна");

@@ -171,9 +171,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9e1230d61d3ca4b93662b500a0f692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Play: {fileID: 2128371907}
-  Options: {fileID: 1823116010}
-  Quit: {fileID: 1424704777}
+  _play: {fileID: 2128371907}
+  _options: {fileID: 1823116010}
+  _quit: {fileID: 1424704777}
 --- !u!1001 &183778287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1968,7 +1968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dc6c6496d0f28f428a511f13374ca58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mixer: {fileID: 24300002, guid: c7f1689730a5fbf40a7de902620b528c, type: 2}
+  _mixer: {fileID: 24300002, guid: c7f1689730a5fbf40a7de902620b528c, type: 2}
 --- !u!1 &2043308793
 GameObject:
   m_ObjectHideFlags: 0
